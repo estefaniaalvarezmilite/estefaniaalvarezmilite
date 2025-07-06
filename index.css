@@ -8,6 +8,8 @@
   --color-secondary: #36509a;
   --color-secondary-dark: #b14349;
   --spacing-section: 65px;
+  --font-primary: "Mochiy Pop One", sans-serif;
+  --font-secondary: "Lexend", sans-serif;
 }
 
 /* ----- Tipografías ----- */
@@ -471,4 +473,28 @@ section:not(#hero) {
 
 #back-to-top-btn:hover {
   background-color: var(--color-secondary);
+}
+
+
+/* Friki Swap */
+#frikiswap .card-title {
+  font-size: 1rem;
+}
+
+#frikiswap .card-body p {
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+#frikiswap .btn {
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--color-secondary);
+  color: white;
+
+}
+
+#frikiswap button{
+  font-family: var(--font-primary);
+  font-size: clamp(12px, 1.2vw, 16px) !important;
 }
