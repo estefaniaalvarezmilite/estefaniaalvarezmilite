@@ -481,6 +481,29 @@ section:not(#hero) {
   font-size: 1rem;
 }
 
+/* Asegura que todas las tarjetas tengan la misma altura */
+#frikiswap .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Contenedor de imagen que no crezca más allá de 200px */
+#frikiswap .card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#frikiswap .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 #frikiswap .card-body p {
   font-size: 0.9rem;
   line-height: 1.3;
@@ -491,10 +514,9 @@ section:not(#hero) {
   text-transform: uppercase;
   background-color: var(--color-secondary);
   color: white;
-
 }
 
-#frikiswap button{
+#frikiswap button {
   font-family: var(--font-primary);
   font-size: clamp(12px, 1.2vw, 16px) !important;
 }
