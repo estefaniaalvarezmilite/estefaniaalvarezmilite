@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Mochiy+Pop+One&display=swap");
+
+/* ----- Variables ----- */
+:root {
+  --height-header: 96px;
+  --height-section: 100vh;
+  --color-primary: #d75159;
+  --color-secondary: #36509a;
+  --color-secondary-dark: #b14349;
+  --spacing-section: 65px;
+}
+
+/* ----- Tipografías ----- */
+.font-primary {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.font-secondary {
+  font-family: "Lexend", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.title {
+  font-family: "Mochiy Pop One", sans-serif;
+  color: var(--color-primary);
+  font-size: clamp(24px, 3.6vw, 50px);
+  font-weight: 400;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* ----- Hero ----- */
+
+#hero {
+  height: var(--height-section);
+}
+
+@media (max-width: 992px) {
+  #hero {
+    padding-top: calc(var(--height-header) + 20%);
+    height: 105vh;
+  }
+}
+
+#hero h1 {
+  font-size: clamp(24px, 3.5vw, 64px);
+  font-weight: 400;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+#hero p {
+  font-weight: 400;
+  font-size: clamp(16px, 1vw, 24px);
+  line-height: clamp(20px, 2vw, 36px);
+  letter-spacing: 0%;
+}
+
+/* Como funciona */
+
+.step-img {
+  height: 200px;
+  width: 200px;
+}
+
+.step-img img {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.step-title {
+  font-family: "Lexend", sans-serif !important;
+  font-size: clamp(16px, 2.5vw, 24px) !important;
+  font-weight: bold !important;
+}
+
+#como-funciona h6 {
+  font-size: clamp(12px, 2.5vw, 16px) !important;
+}
+
+/* ----- Colores ----- */
+.color-primary {
+  color: var(--color-primary);
+}
+
+.color-secondary {
+  color: var(--color-secondary);
+}
+
+.bg-color-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-color-secondary {
+  background-color: var(--color-secondary);
+}
+
+/* ----- Overrides ----- */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  outline: inherit;
+  padding: 0;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+h5 {
+  color: var(--color-secondary) !important;
+  font-family: "Mochiy Pop One", sans-serif;
+  font-size: clamp(16px, 2.5vw, 18px) !important;
+  font-weight: bold;
+  line-height: 36px !important;
+  letter-spacing: 0% !important;
+  margin-bottom: 0 !important;
+  text-transform: uppercase !important;
+}
+
+/* ----- Layout ----- */
+header {
+  height: var(--height-header);
+  z-index: 1050;
+}
+
+nav {
+  height: var(--height-header);
+}
+
+#navbarSupportedContent {
+  left: 0;
+  position: absolute;
+  top: var(--height-header);
+  width: 100%;
+  z-index: 1049;
+}
+
+section:not(#hero) {
+  padding-block: var(--spacing-section);
+}
+
+/* ----- Navegación ----- */
+.nav-link {
+  border-bottom: 3px solid transparent;
+  color: var(--color-secondary) !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: var(--color-primary) !important;
+  transition: transform 300ms ease-in-out;
+}
+
+.nav-link-wrapper {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.nav-mobile {
+  border-bottom: 3px solid var(--color-primary);
+}
+
+/* ----- Botones header ----- */
+.btn-header {
+  align-items: center;
+  background-color: var(--color-primary);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  text-transform: uppercase;
+}
+
+.btn-header:hover {
+  scale: 1.05;
+  transition: transform 300ms ease-in-out;
+}
+
+.btn-header p {
+  color: var(--color-secondary);
+  text-shadow: -1px 0 0 white;
+}
+
+/* Precio */
+.precio {
+  text-align: center;
+  font-family: Lexend;
+  font-size: clamp(24px, 3.5vw, 50px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  text-shadow: -3px 0 0 white, 3px 0 0 black;
+}
+
+/* ----- Sombras ----- */
+.shadow-lg {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px !important;
+}
+
+.scrolled {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  height: var(--height-header);
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* ----- Imágenes y contenedores ----- */
+.image-container {
+  align-items: start;
+  display: flex;
+  height: 600px;
+  justify-content: center;
+  width: 50%;
+}
+
+@media (max-width: 992px) {
+  .image-container {
+    width: auto;
+    height: 100%;
+    margin-top: 1vh;
+  }
+}
+
+.image-container img {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.slide-logo {
+  align-items: center;
+  display: flex;
+  height: 200px;
+  width: 200px;
+}
+
+.slide-logo img {
+  object-fit: cover;
+  width: 100%;
+}
+
+#checklist img {
+  height: 50px;
+  object-fit: cover;
+  width: 50px;
+}
+
+/* ----- Carousel ----- */
+
+.carousel-indicators {
+  gap: 2rem !important;
+  margin-top: 3rem !important; /* controla la separación vertical */
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 30px !important;
+  height: 5px !important;
+  background-color: var(--color-primary) !important;
+  opacity: 0.5 !important;
+  border-radius: 8px;
+  transition: opacity 0.3s ease !important;
+}
+
+.carousel-indicators .active {
+  opacity: 1 !important;
+  background-color: var(
+    --color-primary,
+    #d75159
+  ) !important; /* tu color primario */
+}
+
+/* Planes */
+
+.plan-card {
+  width: 100%;
+  min-height: 980px; /* o height: 100% si el padre lo permite */
+  border-radius: 60px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 40px;
+  text-align: center;
+  position: relative;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .card-body {
+  align-items: center;
+}
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card-footer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.badge-popular {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+#planes .cta{
+  font-size: clamp(12px, 2.5vw, 18px);
+}
+
+/* ----- Utilidades ----- */
+.margin-left {
+  margin-left: 80px;
+}
+
+@media (max-width: 992px) {
+  .margin-left {
+    margin-left: 0;
+  }
+}
+
+.accordion-button {
+  font-family: "Lexend", sans-serif;
+  font-weight: 700;
+  color: var(--color-secondary) !important; 
+}
+
+.accordion-body {
+  font-family: "Lexend", sans-serif;
+  color: #36509a;
+  font-size: 1rem;
+}
+
+
+/* ----- CTA ----- */
+.cta {
+  background-color: var(--color-secondary);
+  border-radius: 5px;
+  color: white;
+  padding: 16px 24px;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 2;
+  font-size: clamp(12px, 1.2vw, 24px);
+}
+
+.cta:hover {
+  background-color: var(--color-primary);
+  transition: all 300ms ease-in-out;
+}
+
+.ctac {
+  border: 5px solid var(--color-primary);
+  border-radius: 5px;
+  height: 100%;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 100%;
+  z-index: -1;
+}
+
+.cta-wrapper {
+  display: inline-block;
+  font-family: "Mochiy Pop One", sans-serif;
+  position: relative;
+  z-index: 1;
+}
+/* ----------------------- */
+.cta-contrast {
+  background-color: var(--color-primary);
+  border-radius: 5px;
+  color: white;
+  padding: 16px 24px;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 2;
+  font-size: clamp(12px, 1.2vw, 24px);
+}
+
+.cta-contrast:hover {
+  background-color: #b24349;
+  transition: all 300ms ease-in-out;
+}
+
+.ctac-contrast {
+  border: 5px solid white;
+  border-radius: 5px;
+  height: 100%;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 100%;
+  z-index: -1;
+}
+
+.cta-wrapper-contrast {
+  display: inline-block;
+  font-family: "Mochiy Pop One", sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+#back-to-top-btn {
+  width: 40px;
+  height: 40px;
+  color: white;
+  background-color: var(--color-primary);
+  border-radius: 25%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+#back-to-top-btn:hover {
+  background-color: var(--color-secondary);
+}

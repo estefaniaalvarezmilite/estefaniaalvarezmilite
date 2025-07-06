@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrikiCaja</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div id="inicio"></div>
+
+    <!-- BACK TO TOP -->
+    <button id="back-to-top-btn" class="d-flex d-lg-none align-items-center justify-content-center active"> <i
+            class="bi bi-arrow-up-short fs-4 text-white"></i></button>
+
+
+    <!-- HEADER -->
+    <header class="fixed-top bg-white d-flex align-items-center justify-content-between z-3 ">
+        <div class="d-flex d-lg-none align-items-center justify-content-between container">
+            <a href="./index.html" class="text-uppercase font-primary"><span class="color-primary">Friki</span><span
+                    class="color-secondary">Caja</span></a>
+            <button class="d-block d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list fs-4"></i>
+            </button>
+        </div>
+
+        <!-- NAV DESKTOP -->
+        <div class="d-lg-flex d-none align-items-center justify-content-between container">
+            <a href="./index.html" class="text-uppercase font-primary"><span class="color-primary">Friki</span><span
+                    class="color-secondary">Caja</span></a>
+            <nav class="d-none d-lg-flex flex-wrap align-items-center text-nowrap gap-5 font-primary">
+                <div class="d-flex align-items-center gap-5 m-0 h-100">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                    <a class="nav-link" href="#que-hay-dentro">Que incluye</a>
+                    <a class="nav-link" href="#planes">Planes</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </div>
+                <a class="btn-header" href="#planes">
+                    <p>Suscribite</p>
+                </a>
+            </nav>
+        </div>
+
+        <!-- NAV MOBILE -->
+        <nav class="collapse d-lg-none font-primary" id="navbarSupportedContent">
+            <div
+                class="d-flex flex-column gap-3 bg-white p-4 rounded-bottom position-absolute start-0 w-100 nav-mobile">
+                <a class="nav-link" href="#inicio">Inicio</a>
+                <a class="nav-link" href="#que-hay-dentro">Que incluye</a>
+                <a class="nav-link" href="#planes">Planes</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
+                <a class="btn-header" href="#planes">
+                    <p>Suscribite</p>
+                </a>
+            </div>
+        </nav>
+
+
+
+    </header>
+
+
+    <section id="hero" class="d-flex align-items-center bg-color-secondary">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+
+                    <img src="./assets/planes/planfrikiplus.png" alt="" class="img-fluid">
+
+                </div>
+                <div class="col-12 col-lg-6">
+
+                    <div class="d-flex flex-column align-items-center align-items-lg-start justify-content-between gap-3 text-center text-lg-start">
+                        <h1 class="title text-white text-uppercase">Plan FrikiPlus</h1>
+                        <p class="text-white font-secondary">La experiencia definitiva: más ítems, más rarezas, y más
+                            exclusividades cada mes. Incluye
+                            figuras de edición limitada, ítems sorpresa extra y acceso anticipado al FrikiSwap. Solo
+                            para frikis de nivel final.</p>
+
+                        <span class="precio color-primary">
+                            AR$ 60.000
+                            <span class="fw-normal" style="font-size: clamp(12px, 1.2vw, 24px);">/mes</span>
+                        </span>
+
+                        <div class="cta-wrapper-contrast">
+                                <button onclick="location.href='/detalle.html'" class="cta-contrast">Elegir este plan</button>
+                                <span class="ctac-contrast"></span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
+
+
+
+
+<script>
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+
+
+</script>
