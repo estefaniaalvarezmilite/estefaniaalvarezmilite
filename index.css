@@ -364,6 +364,8 @@ section:not(#hero) {
   font-size: clamp(12px, 2.5vw, 18px);
 }
 
+
+
 /* ----- Utilidades ----- */
 .margin-left {
   margin-left: 80px;
@@ -520,6 +522,15 @@ section:not(#hero) {
   font-family: var(--font-primary);
   font-size: clamp(12px, 1.2vw, 16px) !important;
 }
+
+#frikiswap .card-title {
+  color: var(--color-primary) !important;
+  font-family: var(--font-primary);
+  font-size: clamp(12px, 2vw, 16px);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
 
 /* Que Opinan Cards */
 
