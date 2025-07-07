@@ -557,3 +557,17 @@ section:not(#hero) {
   outline: none;
   box-shadow: 0 0 0 2px var(--color-primary);
 }
+
+/* Footer */
+#footer ul li {
+  margin-bottom: 8px;
+}
+
+#footer a {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+#footer a:hover {
+  color: var(--color-primary);
+}
