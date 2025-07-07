@@ -531,6 +531,16 @@ section:not(#hero) {
   margin-bottom: 0.5rem;
 }
 
+.plan-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: scale(3);
+  box-shadow: 0 8px 20px rgb(53, 76, 140); /* sombra suave azul */
+  z-index: 2;
+}
+
 
 /* Que Opinan Cards */
 
