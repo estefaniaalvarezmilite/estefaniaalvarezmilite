@@ -592,3 +592,25 @@ section:not(#hero) {
 #footer a:hover {
   color: var(--color-primary);
 }
+
+
+/*Detalle*/
+
+
+/*Hero*/
+
+#plan-frikiplus-destacado .card {
+  background-color: white;
+  border-radius: 32px;
+}
+
+@media (max-width: 768px) {
+  #plan-frikiplus-destacado h1 {
+    text-align: center;
+    width: 100%;
+  }
+
+  #plan-frikiplus-destacado .cta-wrapper {
+    align-self: center;
+  }
+}
