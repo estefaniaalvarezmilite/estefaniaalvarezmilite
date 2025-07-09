@@ -532,12 +532,26 @@ section:not(#hero) {
 }
 
 #frikiswap .card-title {
-  color: var(--color-primary) !important;
+  color: white !important;
   font-family: var(--font-primary);
   font-size: clamp(12px, 2vw, 16px);
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
+
+#frikiswap .card {
+  background-color: #d75159; /* ← fill (rojo) */
+  border: 3px solid #36509a; /* ← stroke (azul) */
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+#frikiswap .card-body p {
+  color: white; /* o #f8f8f8 si querés más contraste */
+  font-family: var(--font-secondary);
+  font-size: 0.9rem;
+}
+
 
 .plan-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
