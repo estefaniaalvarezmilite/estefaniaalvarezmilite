@@ -560,15 +560,15 @@ section:not(#hero) {
   font-size: 0.9rem;
 }
 
-
-.plan-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.plan-card:hover {
+  transform: scale(1.03);
+  border: 5px solid var(--color-secondary);
+  box-shadow: none;
+  z-index: 2;
 }
 
-.plan-card:hover {
-  transform: scale(3);
-  box-shadow: 0 8px 20px rgb(53, 76, 140); /* sombra suave azul */
-  z-index: 2;
+.plan-card {
+  transition: transform 0.3s ease, border 0.3s ease;
 }
 
 
