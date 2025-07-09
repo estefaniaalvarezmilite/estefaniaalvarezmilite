@@ -35,6 +35,14 @@
   vertical-align: middle;
 }
 
+.highlight-title {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  display: inline-block;
+}
+
 /* ----- Hero ----- */
 
 #hero {
@@ -547,7 +555,7 @@ section:not(#hero) {
 }
 
 #frikiswap .card-body p {
-  color: white; /* o #f8f8f8 si querés más contraste */
+  color: white;
   font-family: var(--font-secondary);
   font-size: 0.9rem;
 }
