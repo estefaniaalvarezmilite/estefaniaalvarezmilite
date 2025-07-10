@@ -97,6 +97,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-4 d-flex justify-content-center">
+                    
                     <img src="./assets/img-hero.png" alt="FrikiCaja Hero Image" class="img-fluid w-100" />
                 </div>
             </div>
@@ -116,9 +117,9 @@
                     <div class="col-12 col-lg-6 order-1 order-lg-2">
                         <div class="d-flex flex-column justify-content-evenly align-items-center h-100 gap-5">
                            <h1 
-                           class="title text-uppercase color-secondary" data-aos="fade-up" data-aos-delay="50">
+                           class="title text-uppercase color-secondary" style="line-height: 1.6;" data-aos="fade-up" data-aos-delay="50">
                              <span>¿QUIÉNES</span>
-                            <span class="highlight-title" data-aos="fade-up" data-aos-delay="50">SOMOS?</span>  
+                            <span class="highlight-title" data-aos="fade-up" data-aos-delay="50">SOMOS?</span>
                         </h1>
                             <p class="font-secondary color-secondary text-center text-lg-start"><b
                                     class="text-uppercase">FrikiCaja</b> es una
@@ -197,11 +198,11 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-12 col-lg-7 d-flex flex-column align-items-center align-items-lg-start gap-4 ">
                          <h1 class="title text-uppercase color-secondary d-flex flex-wrap align-items-center justify-content-center gap-2 text-center text-lg-start" data-aos="fade-up" data-aos-delay="50">
-                         <span>¿POR QUÉ</span>
-                        <span class="highlight-title">ELEGIRNOS?</span>
+                         <span>¿POR QUÉ</span> 
+                        <span class="highlight-title data-aos="fade-up data-aos-delay="50">ELEGIRNOS?</span>
                         </h1>
 
-                        <div class="d-flex align-items-center gap-3 w-100" data-aos="fade-up" data-aos-delay="200">
+                        <div class="d-flex align-items-center gap-3 w-100"  style="line-height: 1.6;" data-aos="fade-up" data-aos-delay="200">
                             <div id="checklist"><img src="./assets/por-que/checklist.png" alt="" /></div>
                             <div>
                                 <h5>Cada caja es una sorpresa distinta</h5>
@@ -467,18 +468,18 @@
                     <div class="col-12 col-xl-6">
                         <h1 class="d-block d-lg-none title">¿QUÉ HAY ADENTRO?</h1>
 
-                        <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+<div id="carouselQueHay" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500" data-bs-pause="false">
 
                             <div class="carousel-indicators d-none d-md-flex">
-                                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0"
+                                <button type="button" data-bs-target="carouselQueHay" data-bs-slide-to="0"
                                     class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
+                                <button type="button" data-bs-target="carouselQueHay" data-bs-slide-to="1"
                                     aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"
+                                <button type="button" data-bs-target="carouselQueHay" data-bs-slide-to="2"
                                     aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3"
+                                <button type="button" data-bs-target="carouselQueHay" data-bs-slide-to="3"
                                     aria-label="Slide 4"></button>
-                                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="4"
+                                <button type="button" data-bs-target="carouselQueHay" data-bs-slide-to="4"
                                     aria-label="Slide 5"></button>
                                 <!-- agregá más según los slides -->
                             </div>
@@ -505,7 +506,11 @@
                     </div>
                     <div class="col-12 col-xl-6">
                         <div class="d-flex flex-column align-items-center">
-                            <h1 class="d-none d-lg-block title">¿QUÉ HAY ADENTRO?</h1>
+                             <h1 
+                           class="title text-uppercase color-secondary"  style="line-height: 1.6;" data-aos="fade-up" data-aos-delay="50">
+                             <span>¿QUÉ HAY</span>
+                            <span class="highlight-title" data-aos="fade-up" data-aos-delay="50">ADENTRO?</span>  
+                        </h1>
 
                             <div class="mt-0 mt-lg-5 text-center">
                                 <span class="font-primary fw-bold color-secondary">ÍTEMS EXCLUSIVOS
@@ -529,8 +534,11 @@
         <section id="frikiswap" class="fullscreen-section d-flex flex-column align-items-center bg-white"
             data-aos="fade-up">
             <div class="container">
-                <h1 class="text-uppercase title text-center mb-3">FRIKISWAP: <span
-                        class="color-primary">¡INTERCAMBIÁ!</span></h1>
+                <h1 
+                           class="title text-uppercase color-secondary" data-aos="fade-up" data-aos-delay="50">
+                             <span>FRIKISWAP:</span>
+                            <span class="highlight-title" data-aos="fade-up" data-aos-delay="50">¡INTERCAMBIÁ!</span>  
+                        </h1>
                 <p class="font-secondary text-center fw-bold color-secondary mb-2">
                     Si se repite algún ítem de tu colección, no pasa nada!
                 </p>
@@ -625,8 +633,8 @@
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
       <!-- Opinión 1 -->
       <div class="col">
-        <div class="card h-100 shadow-lg text-center p-4">
-          <img src="./assets/que-opinan/gal.jpeg" class="rounded-circle mx-auto mb-3" alt="Gal" width="100" height="100" style="object-fit: cover;">
+        <div class="card h-100 shadow-lg text-center p-4" data-aos="fade-up" data-aos-delay="50">
+          <img src="./assets/que-opinan/gal.jpeg" class= "rounded-circle mx-auto mb-3" alt="Gal" width="100" height="100" style="object-fit: cover;"> 
           <h5 class="color-secondary font-primary mb-0">GAL</h5>
           <p class="font-secondary color-secondary small mb-1">Plan FrikiPlus</p>
           <div class="mb-3">
@@ -642,7 +650,7 @@
 
       <!-- Opinión 2 -->
       <div class="col">
-        <div class="card h-100 shadow-lg text-center p-4">
+        <div class="card h-100 shadow-lg text-center p-4" data-aos="fade-up" data-aos-delay="50">
           <img src="./assets/que-opinan/steff.jpeg" class="rounded-circle mx-auto mb-3" alt="Steff" width="100" height="100" style="object-fit: cover;">
           <h5 class="color-secondary font-primary mb-0">STEFF</h5>
           <p class="font-secondary color-secondary small mb-1">Plan FrikiPremium</p>
@@ -659,7 +667,7 @@
 
       <!-- Opinión 3 -->
       <div class="col">
-        <div class="card h-100 shadow-lg text-center p-4">
+        <div class="card h-100 shadow-lg text-center p-4" data-aos="fade-up" data-aos-delay="50">
           <img src="./assets/que-opinan/tadeo.jpeg"  class="rounded-circle mx-auto mb-3" alt="Tadeo" width="100" height="100" style="object-fit: cover;">
           <h5 class="color-secondary font-primary mb-0">TADEO</h5>
           <p class="font-secondary color-secondary small mb-1">Plan FrikiLite</p>
