@@ -47,16 +47,24 @@
 
 /* ----- Hero ----- */
 
+
 #hero {
   height: var(--height-section);
+  background-image: url('./assets/img-hero-full.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
 }
 
-@media (max-width: 992px) {
-  #hero {
-    padding-top: calc(var(--height-header) + 20%);
-    height: 105vh;
+@media (max-width: 992px){
+  #hero{
+    background-image: none;
   }
 }
+
 
 #hero h1 {
   font-size: clamp(24px, 3.5vw, 64px);
@@ -260,12 +268,13 @@ section:not(#hero) {
 }
 
 @media (max-width: 992px) {
-  .image-container {
-    width: auto;
-    height: 100%;
-    margin-top: 1vh;
+  #hero {
+    background-position: top;
+    padding-top: calc(var(--height-header) + 20%);
+    height: auto; /* o 105vh si lo querés más alto */
   }
 }
+
 
 .image-container img {
   height: 100%;
