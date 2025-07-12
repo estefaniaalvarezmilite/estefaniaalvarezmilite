@@ -232,7 +232,7 @@ section:not(#hero) {
   text-shadow: -1px 0 0 white;
 }
 
-/.precio {
+.precio {
   text-align: center;
   font-family: Lexend;
   font-size: clamp(24px, 3.5vw, 50px);
@@ -275,6 +275,7 @@ section:not(#hero) {
     height: auto; /* o 105vh si lo querés más alto */
   }
 }
+
 
 
 .image-container img {
@@ -653,6 +654,11 @@ section:not(#hero) {
 
 /*Hero*/
 
+#hero-detalle img {
+  max-height: 90vh;
+  object-fit: cover;
+}
+
 #plan-frikiplus-destacado .card {
   background-color: white;
   border-radius: 32px;
@@ -679,3 +685,46 @@ section:not(#hero) {
   }
 }
 
+/* HERO DETALLE como fondo */
+#hero-detalle {
+  min-height: 100vh;
+  background-image: url('./assets/img-hero-detalle-desktop.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-secondary); /* fallback color */
+}
+
+@media (max-width: 992px) {
+  #hero-detalle {
+    background-image: none;
+    padding-top: calc(var(--height-header) + 50vh);
+    padding-bottom: 3rem;
+    min-height: auto;
+    display: block;
+  }
+}
+
+/* QUE INCLUYE DETALLE */
+
+#queIncluyeTextos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.que-texto {
+  opacity: 0.3;
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+  font-weight: regular;
+  color: var(--color-secondary);
+  transition: all 0.5s ease;
+}
+
+.que-texto.active {
+  opacity: 1;
+  color: var(--color-primary);
+}
