@@ -67,269 +67,586 @@
       </div>
     </nav>
   </header>
-  <!-- HERO DETALLE -->
-  <section class="d-flex align-items-center bg-color-secondary" id="hero-detalle">
-    <div class="container">
-      <div class="row justify-content-end">
-        <!-- TEXTO A LA DERECHA EN DESKTOP -->
-        <div class="col-12 col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="200">
-          <div class="d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start px-lg-5 gap-3">
-            <h1 class="title text-white text-uppercase">Plan FrikiPlus</h1>
-            <p class="text-white font-secondary">
-              La experiencia definitiva: más ítems, más rarezas y más exclusividades cada mes. Incluye
-              figuras de edición limitada, ítems sorpresa extra y acceso anticipado al FrikiSwap.
-              Solo para frikis de nivel final.
-            </p>
-            <h1 class="color-primary fw-bold font-secondary mt-2 mb-2">
-              AR$ 155.000
-              <span class="fw-normal" style="font-size: clamp(12px, 1.2vw, 20px);">/mes</span>
+
+
+
+  <main>
+    <!-- HERO DETALLE -->
+    <section class="d-flex align-items-center bg-color-secondary" id="hero-detalle">
+      <div class="container">
+        <div class="row justify-content-end">
+          <!-- TEXTO A LA DERECHA EN DESKTOP -->
+          <div class="col-12 col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start px-lg-5 gap-3">
+              <div class="badge rounded-pill fs-5 text-uppercase fw-bold bg-color-primary font-secondary text-white">
+                El más elegido
+              </div>
+              <h1 class="title text-white text-uppercase">Plan FrikiPlus</h1>
+              <p class="text-white font-secondary">
+                La experiencia definitiva: más ítems, más rarezas y más exclusividades cada mes. Incluye
+                figuras de edición limitada, ítems sorpresa extra y acceso anticipado al FrikiSwap.
+                Solo para frikis de nivel final.
+              </p>
+              <h1 class="color-primary fw-bold font-secondary mt-2 mb-2">
+                AR$ 155.000
+                <span class="fw-normal" style="font-size: clamp(12px, 1.2vw, 20px);">/mes</span>
+              </h1>
+              <div class="cta-wrapper-contrast">
+                <button class="cta-contrast" onclick="location.href='/detalle.html'">Elegir este plan</button>
+                <span class="ctac-contrast"></span>
+              </div>
+            </div>
+          </div>
+          <!-- IMAGEN MOBILE ABAJO -->
+          <div class="col-12 d-block d-lg-none mt-5" data-aos="fade-up" data-aos-delay="300">
+            <img alt="Hero Mobile" class="img-fluid w-100" src="./assets/img-hero-detalle-mobile.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- DETALLE QUE INCLUYE EL PLAN FRIKIPLUS -->
+    <section class="py-5 bg-white" id="que-incluye-frikiplus">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- TEXTO IZQUIERDA -->
+          <div class="col-12 col-lg-6">
+            <h1 class="title text-uppercase color-secondary" style="line-height: 1.6;" data-aos="fade-up"
+              data-aos-delay="50">
+              <span>¿QUÉ</span>
+              <span class="highlight-title" data-aos="fade-up" data-aos-delay="50">INCLUYE?</span>
             </h1>
-            <div class="cta-wrapper-contrast">
-              <button class="cta-contrast" onclick="location.href='/detalle.html'">Elegir este plan</button>
-              <span class="ctac-contrast"></span>
+            <div id="queIncluyeTextos">
+              <div class="que-texto active" data-aos="fade-up" data-aos-delay="100"> ● Un figurín de vinilo de un
+                Universo
+              </div>
+              <div class="que-texto" data-aos="fade-up" data-aos-delay="200"> ● Peluche pequeño de algodón de un
+                Universo
+              </div>
+              <div class="que-texto" data-aos="fade-up" data-aos-delay="300"> ● Llavero oficial con colgante de un
+                Universo</div>
+              <div class="que-texto" data-aos="fade-up" data-aos-delay="400"> ● Pin esmaltado de un Universo (Exclusivo
+                Plan FrikiPlus)</div>
+              <div class="que-texto" data-aos="fade-up" data-aos-delay="500"> ● Remera Edición Limitada de un Universo
+                (Exclusivo Plan FrikiPlus)</div>
             </div>
           </div>
-        </div>
-        <!-- IMAGEN MOBILE ABAJO -->
-        <div class="col-12 d-block d-lg-none mt-5" data-aos="fade-up" data-aos-delay="300">
-          <img alt="Hero Mobile" class="img-fluid w-100" src="./assets/img-hero-detalle-mobile.png" />
+          <!-- IMAGEN DERECHA (CARRUSEL) -->
+          <div class="col-12 col-lg-6 mt-4 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
+            <div class="carousel slide" data-bs-interval="3000" data-bs-ride="carousel" id="carouselIncluye">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img alt="Figurín" class="d-block w-100" src="./assets/detalle/detalle-que-incluye-figurin.png" />
+                </div>
+                <div class="carousel-item">
+                  <img alt="Peluche" class="d-block w-100" src="./assets/detalle/detalle-que-incluye-peluche.png" />
+                </div>
+                <div class="carousel-item">
+                  <img alt="Llavero" class="d-block w-100" src="./assets/detalle/detalle-que-incluye-llavero.png" />
+                </div>
+                <div class="carousel-item">
+                  <img alt="Pin" class="d-block w-100" src="./assets/detalle/detalle-que-incluye-pin.png" />
+                </div>
+                <div class="carousel-item">
+                  <img alt="Remera" class="d-block w-100" src="./assets/detalle/detalle-que-incluye-remera.png" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- DETALLE QUE INCLUYE EL PLAN FRIKIPLUS -->
-  <section class="py-5 bg-white" id="que-incluye-frikiplus">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- TEXTO IZQUIERDA -->
-        <div class="col-12 col-lg-6">
-          <h1 
-                           class="title text-uppercase color-secondary" style="line-height: 1.6;" data-aos="fade-up" data-aos-delay="50">
-                             <span>¿QUÉ</span>
-                            <span class="highlight-title" data-aos="fade-up" data-aos-delay="50">INCLUYE?</span>
-                        </h1>
-          <div id="queIncluyeTextos">
-            <div class="que-texto active" data-aos="fade-up" data-aos-delay="100"> ● Un figurín de vinilo de un Universo
-            </div>
-            <div class="que-texto" data-aos="fade-up" data-aos-delay="200"> ● Peluche pequeño de algodón de un Universo
-            </div>
-            <div class="que-texto" data-aos="fade-up" data-aos-delay="300"> ● Llavero oficial con colgante de un
-              Universo</div>
-            <div class="que-texto" data-aos="fade-up" data-aos-delay="400"> ● Pin esmaltado de un Universo (Exclusivo
-              Plan FrikiPlus)</div>
-            <div class="que-texto" data-aos="fade-up" data-aos-delay="500"> ● Remera Edición Limitada de un Universo
-              (Exclusivo Plan FrikiPlus)</div>
+    </section>
+
+    </section>
+    <!-- BENEFICIOS DE SER PLUS -->
+    <section id="beneficios-de-ser-plus" class="fullscreen-section  d-flex flex-column align-items-center"
+      data-aos="fade-up">
+      <div class="container">
+        <h1 class="title text-uppercase color-secondary" data-aos="fade-up" data-aos-delay="50">
+          <span>BENEFICIOS DE SER</span>
+          <span class="highlight-title" data-aos="fade-up" data-aos-delay="50">PLUS</span>
+        </h1>
+        <div class="mt-5 d-flex flex-column flex-lg-row justify-content-evenly gap-5 font-secondary">
+          <div class="d-flex flex-column align-items-center color-secondary" data-aos="fade-up" data-aos-delay="100">
+            <div class="step-img"><img src="./assets/detalle/detalle-beneficios-icon-1.png" alt=""></div>
+            <p style="font-weight: bold; font-family: Lexend;">ENVÍO EN TIEMPO RÉCORD</p>
+            <p class=" text-center w-100">Despachamos tu pedido con envío prioritario y recibilo en hasta 24hs hábiles.
+            </p>
           </div>
+          <div class="d-flex flex-column align-items-center  color-secondary" data-aos="fade-up" data-aos-delay="200">
+            <div class="step-img"><img src="./assets/detalle/detalle-beneficios-icon-2.png" alt=""></div>
+            <p style="font-weight: bold; font-family: Lexend;">MÁS RAREZAS E ÍTEMS FRIKIS</p>
+            <p class=" text-center w-100">Curaduría especial con ítems más raros y variantes que no se obtienen en el
+              plan
+              básico</p>
+          </div>
+          <div class="d-flex flex-column align-items-center color-secondary" data-aos="fade-up" data-aos-delay="200">
+            <div class="step-img"><img src=".//assets/detalle/detalle-beneficios-icon-3.png" alt=""></div>
+            <p style="font-weight: bold; font-family: Lexend;">PARTICIPÁS EN SORTEOS</p>
+            <p class="color-secondary text-center w-100">Sorteos mensuales sólo para miembros Plus para acceder a más
+              ítems exclusivos</p>
+          </div>
+
         </div>
-        <!-- IMAGEN DERECHA (CARRUSEL) -->
-        <div class="col-12 col-lg-6 mt-4 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
-          <div class="carousel slide" data-bs-interval="3000" data-bs-ride="carousel" id="carouselIncluye">
-            <div class="carousel-inner">
+      </div>
+
+    </section>
+
+    <!-- ReseñasFrikiPlus (carousel) -->
+    <section id="opiniones-plus" class="fullscreen-section bg-white py-5" data-aos="fade-up">
+      <div class="container">
+        <h1
+          class="title text-uppercase color-secondary d-flex flex-wrap align-items-center justify-content-center gap-2 text-center text-lg-start"
+          data-aos="fade-up" data-aos-delay="50">
+          <span>¿QUÉ OPINAN NUESTROS</span>
+          <span class="highlight-title">FRIKIS PLUS?</span>
+        </h1>
+
+        <div id="carouselTestimonios" class="carousel slide mt-5" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="card h-100 text-center p-4 mx-auto" style="max-width: 600px;">
+                <img src="./assets/que-opinan/luke.jpeg" class="rounded-circle mx-auto mb-3" alt="Lucas" width="100"
+                  height="100" style="object-fit: cover; border: 4px solid var(--color-primary);" />
+                <h5 class="color-secondary font-primary mb-0">LUCAS</h5>
+                <p class="font-secondary color-secondary small mb-1">Miembro desde enero 2025</p>
+                <div class="mb-3">
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                </div>
+                <p class="font-secondary color-secondary small">“Con FrikiPlus siento que cada mes me llega un pedacito
+                  de
+                  convención geek a mi casa. Las figuras exclusivas son una locura y ya llené una repisa entera. ¡Vale
+                  cada centavo!”</p>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="card h-100 text-center p-4 mx-auto" style="max-width: 600px;">
+                <img src="assets/que-opinan/lucho.jpeg" class="rounded-circle mx-auto mb-3" alt="Luciano" width="100"
+                  height="100" style="object-fit: cover; border: 4px solid var(--color-primary);" />
+                <h5 class="color-secondary font-primary mb-0">Luciano</h5>
+                <p class="font-secondary color-secondary small mb-1">Miembro desde noviembre 2024</p>
+                <div class="mb-3">
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                </div>
+                <p class="font-secondary color-secondary small">“Lo mejor de ser FrikiPlus es la emoción de lo
+                  inesperado.
+                  Me tocó un pin de edición limitada de mi serie favorita y no lo vi en ningún otro lado. Y el GeekSwap
+                  es
+                  ideal para canjear los repetidos.”</p>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="card h-100 text-center p-4 mx-auto" style="max-width: 600px;">
+                <img src="./assets/que-opinan/gonza.jpeg" class="rounded-circle mx-auto mb-3" alt="Gonzalo" width="100"
+                  height="100" style="object-fit: cover; border: 4px solid var(--color-primary);" />
+                <h5 class="color-secondary font-primary mb-0">GONZALO</h5>
+                <p class="font-secondary color-secondary small mb-1">Miembro desde agosto 2023</p>
+                <div class="mb-3">
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                  <i class="bi bi-star-fill text-danger"></i>
+                </div>
+                <p class="font-secondary color-secondary small">“FrikiPlus me sorprendió: más ítems, mejor curaduría, y
+                  acceso anticipado al contenido exclusivo. Me siento parte de una comunidad friki real. ¡Ya convertí a
+                  dos amigos!”</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Controles -->
+          <button class="carousel-control-prev custom-carousel-control" type="button"
+            data-bs-target="#carouselTestimonios" data-bs-slide="prev">
+            <i class="bi bi-arrow-left-circle-fill"></i>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+
+          <button class="carousel-control-next custom-carousel-control" type="button"
+            data-bs-target="#carouselTestimonios" data-bs-slide="next">
+            <i class="bi bi-arrow-right-circle-fill"></i>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Logos de Métodos de Pago -->
+    <section id="metodos-de-pago" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
+
+        <!-- Versión desktop -->
+        <div class="d-none d-md-flex justify-content-center align-items-center gap-5 flex-wrap">
+
+          <img src="./assets/logos/logo-mercadopago.png" alt="Mercado Pago" class="img-fluid"
+            style="max-height: 80px;" />
+          <img src="./assets/logos/logo-brubank.png" alt="Brubank" class="img-fluid" style="max-height: 80px;" />
+          <img src="./assets/logos/logo-modo.png" alt="Modo" class="img-fluid" style="max-height: 80px;" />
+          <img src="./assets/logos/logo-uala.png" alt="Uala" class="img-fluid" style="max-height: 80px;" />
+          <img src="./assets/logos/logo-visa.png" alt="Visa" class="img-fluid" style="max-height: 80px;" />
+        </div>
+
+        <!-- Versión mobile (carousel) -->
+        <div class="d-md-none">
+          <h1 class="text-center font-primary color-primary text-uppercase mb-5 title" data-aos="fade-up">
+            Métodos de Pago</h1>
+          <div id="MetodosdePagoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner text-center">
+
               <div class="carousel-item active">
-                <img alt="Figurín" class="d-block w-100" src="./assets/detalle/detalle-que-incluye-figurin.png" />
+                <img src="./assets/logos/logo-mercadopago.png" class="img-fluid mx-auto" alt="Mercado Pago"
+                  style="max-height: 100px;" />
               </div>
               <div class="carousel-item">
-                <img alt="Peluche" class="d-block w-100" src="./assets/detalle/detalle-que-incluye-peluche.png" />
+                <img src="./assets/logos/logo-brubank.png" class="img-fluid mx-auto" alt="Brubank"
+                  style="max-height: 100px;" />
               </div>
               <div class="carousel-item">
-                <img alt="Llavero" class="d-block w-100" src="./assets/detalle/detalle-que-incluye-llavero.png" />
+                <img src="./assets/logos/logo-modo.png" class="img-fluid mx-auto" alt="Modo"
+                  style="max-height: 100px;" />
               </div>
               <div class="carousel-item">
-                <img alt="Pin" class="d-block w-100" src="./assets/detalle/detalle-que-incluye-pin.png" />
+                <img src="./assets/logos/logo-uala.png" class="img-fluid mx-auto" alt="Uala"
+                  style="max-height: 100px;" />
               </div>
               <div class="carousel-item">
-                <img alt="Remera" class="d-block w-100" src="./assets/detalle/detalle-que-incluye-remera.png" />
+                <img src="./assets/logos/logo-visa.png" class="img-fluid mx-auto" alt="Visa"
+                  style="max-height: 100px;" />
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--  OTROS PLANES -->
+    <section id="otros-planes" class="fullscreen-section d-flex flex-column align-items-center bg-color-primary"
+      data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
+        <h1 class="text-white text-uppercase title my-5">Otros Frikiplanes</h1>
+        <div class="row gy-5">
+
+          <!-- PLAN: FrikiLite -->
+          <div class="col-12 col-lg-6 ">
+            <div class="plan-card h-100" data-aos="zoom-in" data-aos-delay="200">
+              <div class="card-header w-100">
+                <img src="./assets/planes/plan-frikilite.png" alt="Plan FrikiLite"
+                  class="img-fluid w-100 object-fit-cover rounded-top" />
+                <h1 class="color-secondary text-uppercase font-primary fw-bold mt-3"
+                  style="font-size: clamp(38px, 3.2vw, 32px) !important;">Plan <br> Frikilite</h1>
+              </div>
+
+              <div class="card-body flex-grow-1 d-flex flex-column justify-content-between w-100">
+                <ul class="font-secondary text-start px-3">
+                  <li class="d-flex align-items-baseline">
+                    <i class="bi bi-check-circle-fill fs-4 color-primary"></i>
+                    <span class="ms-2 fs-6 color-secondary">Figurín de vinilo de un Universo</span>
+                  </li>
+                  <li class="d-flex align-items-baseline">
+                    <i class="bi bi-check-circle-fill fs-4 color-primary"></i>
+                    <span class="ms-2 fs-6 color-secondary">Peluche pequeño relleno de
+                      algodón</span>
+                  </li>
+                  <li class="d-flex align-items-baseline">
+                    <i class="bi bi-check-circle-fill fs-4 color-primary"></i>
+                    <span class="ms-2 fs-6 color-secondary">Llavero con colgante</span>
+                  </li>
+                  <li class="d-flex align-items-baseline">
+                    <i class="bi bi-gift-fill fs-4 color-primary"></i>
+                    <span class="ms-2 fs-6 color-primary fw-bold">Pin esmaltado</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-footer w-100 text-center mt-auto">
+                <h1 class="color-primary fw-bold font-secondary mt-2 mb-2">AR$ 149.000
+                  <span class="fw-normal" style="font-size: clamp(12px, 1.2vw, 20px);">/mes</span>
+                </h1>
+                <div class="cta-wrapper">
+                  <button onclick="location.href='/detalle.html'" class="cta">Elegir plan</button>
+                  <span class="ctac"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PLAN: FrikiPremium -->
+          <div class="col-12 col-lg-6 ">
+            <div class="plan-card h-100" data-aos="zoom-in" data-aos-delay="200">
+              <div class="card-header w-100">
+                <img src="./assets/planes/plan-frikipremium.png" alt="Plan FrikiPremium"
+                  class="img-fluid w-100 object-fit-cover rounded-top" />
+                <h1 class="color-secondary text-uppercase font-primary fw-bold mt-3"
+                  style="font-size: clamp(38px, 3.2vw, 32px) !important;">Plan <br> FrikiPremium</h1>
+              </div>
+
+              <div class="card-body flex-grow-1 d-flex flex-column justify-content-between w-100">
+                <ul class="font-secondary text-start px-3">
+                  <li class="d-flex align-items-baseline">
+                    <i class="bi bi-check-circle-fill fs-4 color-primary"></i>
+                    <span class="ms-2 fs-6 color-secondary">Dos figurines de vinilo de un
+                      Universo</span>
+                  </li>
+                  <li class="d-flex align-items-baseline">
+                    <i class="bi bi-check-circle-fill fs-4 color-primary"></i>
+                    <span class="ms-2 fs-6 color-secondary">Peluche mediano relleno de
+                      algodón</span>
+                  </li>
+                  <li class="d-flex align-items-baseline">
+                    <i class="bi bi-check-circle-fill fs-4 color-primary"></i>
+                    <span class="ms-2 fs-6 color-secondary">Llavero con colgante y accesorio</span>
+                  </li>
+                  <li class="d-flex align-items-baseline">
+                    <i class="bi bi-gift-fill fs-4 color-primary"></i>
+                    <span class="ms-2 fs-6 color-primary fw-bold">Dos pines esmaltados</span>
+                  </li>
+                  <li class="d-flex align-items-baseline">
+                    <i class="bi bi-gift-fill fs-4 color-primary"></i>
+                    <span class="ms-2 fs-6 color-primary fw-bold">Remera Edición Limitada</span>
+                  </li>
+                  <li class="d-flex align-items-baseline">
+                    <i class="bi bi-gift-fill fs-4 color-primary"></i>
+                    <span class="ms-2 fs-6 color-primary fw-bold">Acceso prioritario a
+                      FrikiSwap</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-footer w-100 text-center mt-auto">
+                <h1 class="color-primary fw-bold font-secondary mt-2 mb-2">AR$ 160.000
+                  <span class="fw-normal" style="font-size: clamp(12px, 1.2vw, 20px);">/mes</span>
+                </h1>
+                <div class="cta-wrapper">
+                  <button onclick="location.href='/detalle.html'" class="cta">Elegir plan</button>
+                  <span class="ctac"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section id="preguntas-frecuentes" class="fullscreen-section d-flex flex-column align-items-center">
+      <div class="container">
+        <h1 class="text-uppercase color-primary font-primary title my-5 text-center">Preguntas Frecuentes</h1>
+        <div class="row row-cols-1 row-cols-lg-2 g-4">
+          <!-- Columna 1 -->
+          <div class="col">
+            <div class="accordion" id="accordionLeft">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
+                    aria-expanded="true" aria-controls="faq1">
+                    ¿Cuándo puedo cancelar mi suscripción?
+                  </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#accordionLeft">
+                  <div class="accordion-body">
+                    Sí, en cualquier momento que quieras y te devolveremos el dinero por el tiempo
+                    que te suscribiste.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                    ¿Cuáles son los métodos de pago?
+                  </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                  <div class="accordion-body">
+                    Aceptamos tarjeta de crédito, débito, y billeteras virtuales como Mercado Pago y
+                    Ualá.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                    ¿Puedo cambiarme a un plan superior al que tengo?
+                  </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                  <div class="accordion-body">
+                    Sí, podés hacer el upgrade desde tu perfil y el cambio se aplicará en tu próxima
+                    caja.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna 2 -->
+          <div class="col">
+            <div class="accordion" id="accordionRight">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq4"
+                    aria-expanded="true" aria-controls="faq4">
+                    ¿Cuánto tiempo tarda en llegar mi caja?
+                  </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse show" data-bs-parent="#accordionRight">
+                  <div class="accordion-body">
+                    Puede demorar entre 3 y 10 días hábiles dependiendo de la ubicación de entrega.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                    ¿Qué pasa si me suscribo a mitad de mes?
+                  </button>
+                </h2>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#accordionRight">
+                  <div class="accordion-body">
+                    Recibirás tu caja en la próxima tanda de envíos. Siempre te notificamos cuándo
+                    se despacha.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                    ¿Cómo se realiza el envío?
+                  </button>
+                </h2>
+                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#accordionRight">
+                  <div class="accordion-body">
+                    Usamos correo puerta a puerta a todo el país. Te enviamos un código de
+                    seguimiento apenas sale del depósito.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-</section>
-        <!-- BENEFICIOS DE SER PLUS -->
-        <section id="beneficios-de-ser-plus" class="fullscreen-section  d-flex flex-column align-items-center"
-            data-aos="fade-up">
-            <div class="container">
-                 <h1 
-                           class="title text-uppercase color-secondary" data-aos="fade-up" data-aos-delay="50">
-                             <span>BENEFICIOS DE SER</span>
-                            <span class="highlight-title" data-aos="fade-up" data-aos-delay="50">PLUS</span>  
-                        </h1>
-                <div class="mt-5 d-flex flex-column flex-lg-row justify-content-evenly gap-5 font-secondary">
-                    <div class="d-flex flex-column align-items-center color-secondary" data-aos="fade-up"
-                        data-aos-delay="100">
-                        <div class="step-img"><img src="./assets/detalle/detalle-beneficios-icon-1.png" alt=""></div>
-                        <p style="font-weight: bold; font-family: Lexend;">ENVÍO EN TIEMPO RÉCORD</p>
-                        <p class=" text-center w-100">Despachamos tu pedido con envío prioritario y recibilo en hasta 24hs hábiles. </p>
-                    </div>
-                    <div class="d-flex flex-column align-items-center  color-secondary" data-aos="fade-up"
-                        data-aos-delay="200">
-                        <div class="step-img"><img src="./assets/detalle/detalle-beneficios-icon-2.png" alt=""></div>
-                        <p style="font-weight: bold; font-family: Lexend;">MÁS RAREZAS E ÍTEMS FRIKIS</p>
-                        <p class=" text-center w-100">Curaduría especial con ítems más raros y variantes que no se obtienen en el plan básico</p>
-                    </div>
-                    <div class="d-flex flex-column align-items-center color-secondary" data-aos="fade-up"
-                        data-aos-delay="200">
-                        <div class="step-img"><img src=".//assets/detalle/detalle-beneficios-icon-3.png" alt=""></div>
-                        <p style="font-weight: bold; font-family: Lexend;">PARTICIPÁS EN SORTEOS</p>
-                        <p class="color-secondary text-center w-100">Sorteos mensuales sólo para miembros Plus para acceder a más ítems exclusivos</p>
-                    </div>
-
-                </div>
-            </div>
-
-        </section>
-
-</section>
-
- 
-        </section>
+    </section>
 
 
-        <!-- ReseñasFrikiPlus (carousel) -->
-<section id="opiniones-plus" class="fullscreen-section bg-white py-5" data-aos="fade-up">
-  <div class="container">
-    <h1 class="title text-uppercase color-secondary d-flex flex-wrap align-items-center justify-content-center gap-2 text-center text-lg-start" data-aos="fade-up" data-aos-delay="50">
-      <span>¿QUÉ OPINAN NUESTROS</span>
-      <span class="highlight-title">FRIKIS PLUS?</span>
-    </h1>
+    <!-- Contactanos-->
+    <section id="contacto" class="fullscreen-section d-flex align-items-center" data-aos="fade-up">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
 
-    <div id="carouselTestimonios" class="carousel slide mt-5" data-bs-ride="carousel">
-      <div class="carousel-inner">
+          <!-- Formulario -->
+          <div class="col-12 col-lg-6">
+            <h1 class="text-uppercase title text-center mb-4">Contactanos</h1>
 
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <div class="card h-100 shadow-lg text-center p-4 mx-auto" style="max-width: 600px;">
-            <img src="./assets/que-opinan/luke.jpeg" class="rounded-circle mx-auto mb-3" alt="Lucas" width="100" height="100" style="object-fit: cover; border: 4px solid var(--color-primary);" />
-            <h5 class="color-secondary font-primary mb-0">LUCAS</h5>
-            <p class="font-secondary color-secondary small mb-1">Miembro desde enero 2025</p>
-            <div class="mb-3">
-              <i class="bi bi-star-fill text-danger"></i>
-              <i class="bi bi-star-fill text-danger"></i>
-              <i class="bi bi-star-fill text-danger"></i>
-              <i class="bi bi-star-fill text-danger"></i>
-              <i class="bi bi-star-fill text-danger"></i>
-            </div>
-            <p class="font-secondary color-secondary small">“Con FrikiPlus siento que cada mes me llega un pedacito de convención geek a mi casa. Las figuras exclusivas son una locura y ya llené una repisa entera. ¡Vale cada centavo!”</p>
+            <form class="font-secondary">
+              <div class="mb-3">
+                <input type="text" class="form-control custom-input" placeholder="Nombre">
+              </div>
+              <div class="mb-3">
+                <input type="tel" class="form-control custom-input" placeholder="Celular">
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control custom-input" placeholder="Correo Electrónico">
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control custom-input" rows="5" placeholder="Mensaje"></textarea>
+              </div>
+              <div class="cta-wrapper mt-3">
+                <button type="submit" class="cta">ENVIAR</button>
+                <span class="ctac"></span>
+              </div>
+            </form>
           </div>
         </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <div class="card h-100 shadow-lg text-center p-4 mx-auto" style="max-width: 600px;">
-            <img src="assets/que-opinan/lucho.jpeg" class="rounded-circle mx-auto mb-3" alt="Luciano" width="100" height="100" style="object-fit: cover; border: 4px solid var(--color-primary);" />
-            <h5 class="color-secondary font-primary mb-0">Luciano</h5>
-            <p class="font-secondary color-secondary small mb-1">Miembro desde noviembre 2024</p>
-            <div class="mb-3">
-              <i class="bi bi-star-fill text-danger"></i>
-              <i class="bi bi-star-fill text-danger"></i>
-              <i class="bi bi-star-fill text-danger"></i>
-              <i class="bi bi-star-fill text-danger"></i>
-              <i class="bi bi-star-fill text-danger"></i>
-            </div>
-            <p class="font-secondary color-secondary small">“Lo mejor de ser FrikiPlus es la emoción de lo inesperado. Me tocó un pin de edición limitada de mi serie favorita y no lo vi en ningún otro lado. Y el GeekSwap es ideal para canjear los repetidos.”</p>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="carousel-item">
-          <div class="card h-100 shadow-lg text-center p-4 mx-auto" style="max-width: 600px;">
-            <img src="./assets/que-opinan/gonza.jpeg" class="rounded-circle mx-auto mb-3" alt="Gonzalo" width="100" height="100" style="object-fit: cover; border: 4px solid var(--color-primary);" />
-            <h5 class="color-secondary font-primary mb-0">GONZALO</h5>
-            <p class="font-secondary color-secondary small mb-1">Miembro desde agosto 2023</p>
-            <div class="mb-3">
-              <i class="bi bi-star-fill text-danger"></i>
-              <i class="bi bi-star-fill text-danger"></i>
-              <i class="bi bi-star-fill text-danger"></i>
-              <i class="bi bi-star-fill text-danger"></i>
-              <i class="bi bi-star-fill text-danger"></i>
-            </div>
-            <p class="font-secondary color-secondary small">“FrikiPlus me sorprendió: más ítems, mejor curaduría, y acceso anticipado al contenido exclusivo. Me siento parte de una comunidad friki real. ¡Ya convertí a dos amigos!”</p>
-          </div>
-        </div>
-
       </div>
+    </section>
 
-      <!-- Controles -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="next">
-        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
+
+  </main>
+
+
+  <!--Footer-->
+
+  <footer id="footer" class="bg-color-secondary text-white py-5">
+    <div class="container">
+      <div class="row gy-4">
+        <!-- Columna 1: Marca -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h5 class="font-primary">
+            <span class="text-white">FRIKI</span><span class="color-primary">CAJA</span>
+          </h5>
+          <p class="font-secondary mt-3">Av. Cabildo y Juramento, Belgrano, CP 1426<br>Buenos Aires, Argentina
+          </p>
+          <p class="font-secondary mt-2">Telefono: +1 5589 55488 55</p>
+          <p class="font-secondary">Email: frikicaja@gmail.com</p>
+        </div>
+
+        <!-- Columna 2: Navegación -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="fw-bold font-secondary">Inicio</h6>
+          <ul class="list-unstyled font-secondary mt-3">
+            <li><a href="#planes" class="text-white">Servicio</a></li>
+            <li><a href="#planes" class="text-white">Subscripciones</a></li>
+            <li><a href="#quienes-somos" class="text-white">Sobre Nosotros</a></li>
+            <li><a href="#preguntas-frecuentes" class="text-white">Preguntas Frecuentes</a></li>
+            <li><a href="#contacto" class="text-white">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: FrikiSwap -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="fw-bold font-secondary">FrikiSwap</h6>
+          <ul class="list-unstyled font-secondary mt-3">
+            <li><a href="#frikiswap" class="text-white">Que Es</a></li>
+            <li><a href="#como-funciona" class="text-white">Como Funciona</a></li>
+            <li><a href="#frikiswap" class="text-white">Intercambios</a></li>
+            <li><a href="#opiniones" class="text-white">Oferta</a></li>
+            <li><a href="#" class="text-white">Términos y Condiciones</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Redes -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="fw-bold font-secondary mb-3">Seguinos en redes</h6>
+          <div class="d-flex gap-3 fs-5">
+            <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
-
-       <!-- Logos de Métodos de Pago -->
-        <section id="metodos-de-pago" data-aos="fade-up" data-aos-delay="100">
-            <div class="container">
-
-                <!-- Versión desktop -->
-                <div class="d-none d-md-flex justify-content-center align-items-center gap-5 flex-wrap">
-
-                    <img src="./assets/logos/logo-mercadopago.png" alt="Mercado Pago" class="img-fluid"
-                        style="max-height: 80px;" />
-                    <img src="./assets/logos/logo-brubank.png" alt="Brubank" class="img-fluid"
-                        style="max-height: 80px;" />
-                    <img src="./assets/logos/logo-modo.png" alt="Modo" class="img-fluid"
-                        style="max-height: 80px;" />
-                    <img src="./assets/logos/logo-uala.png" alt="Uala" class="img-fluid"
-                        style="max-height: 80px;" />
-                    <img src="./assets/logos/logo-visa.png" alt="Visa" class="img-fluid"
-                        style="max-height: 80px;" />
-                </div>
-
-                <!-- Versión mobile (carousel) -->
-                <div class="d-md-none">
-                    <h1 class="text-center font-primary color-primary text-uppercase mb-5 title" data-aos="fade-up">
-                        Métodos de Pago</h1>
-                    <div id="MetodosdePagoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                        <div class="carousel-inner text-center">
-
-                            <div class="carousel-item active">
-                                <img src="./assets/logos/logo-mercadopago.png" class="img-fluid mx-auto" alt="Mercado Pago"
-                                    style="max-height: 100px;" />
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./assets/logos/logo-brubank.png" class="img-fluid mx-auto"
-                                    alt="Brubank" style="max-height: 100px;" />
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./assets/logos/logo-modo.png" class="img-fluid mx-auto"
-                                    alt="Modo" style="max-height: 100px;" />
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./assets/logos/logo-uala.png" class="img-fluid mx-auto"
-                                    alt="Uala" style="max-height: 100px;" />
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./assets/logos/logo-visa.png" class="img-fluid mx-auto"
-                                    alt="Visa" style="max-height: 100px;" />
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-</section>
-
-
-
-
-
+  </footer>
 
 
 
 
   <script>
-  const carousel = document.querySelector('#carouselIncluye');
+    const carousel = document.querySelector('#carouselIncluye');
 
     const textos = document.querySelectorAll('#queIncluyeTextos .que-texto');
 
@@ -345,6 +662,13 @@
     window.addEventListener('DOMContentLoaded', () => {
       if (textos.length > 0) textos[0].classList.add('active');
     });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init({
+        once: true 
+      });
+    });
+
   </script>
 
 
