@@ -232,16 +232,17 @@ section:not(#hero) {
   text-shadow: -1px 0 0 white;
 }
 
-/* Precio */
-.precio {
+/.precio {
   text-align: center;
   font-family: Lexend;
   font-size: clamp(24px, 3.5vw, 50px);
   font-style: normal;
   font-weight: 700;
   line-height: 50px;
-  text-shadow: -3px 0 0 white, 3px 0 0 black;
+  color: white; /* o var(--color-secundario), lo que prefieras */
+  text-shadow: none; /* elimina completamente el borde negro */
 }
+
 
 /* ----- Sombras ----- */
 .shadow-lg {
@@ -323,6 +324,18 @@ section:not(#hero) {
     #d75159
   ) !important; /* tu color primario */
 }
+
+.carousel-wrapper {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-wrapper .carousel-inner img {
+  max-height: 400px;
+  object-fit: contain;
+}
+
 
 /* Planes */
 
