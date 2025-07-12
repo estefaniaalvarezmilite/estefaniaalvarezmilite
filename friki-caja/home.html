@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FrikiCaja</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" /> <!-- AOS -->
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+<body>
+
+    <div id="inicio"></div>
+
+    <!-- BACK TO TOP -->
+    <button id="back-to-top-btn" class="d-flex d-lg-none align-items-center justify-content-center active"> <i
+            class="bi bi-arrow-up-short fs-4 text-white"></i></button>
+
+
+    <!-- HEADER -->
+    <header class="fixed-top bg-white d-flex align-items-center justify-content-between z-3 ">
+        <div class="d-flex d-lg-none align-items-center justify-content-between container">
+            <a href="./home.html" class="text-uppercase font-primary"><span class="color-primary">Friki</span><span
+                    class="color-secondary">Caja</span></a>
+            <button class="d-block d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list fs-4"></i>
+            </button>
+        </div>
+
+        <!-- NAV DESKTOP -->
+        <div class="d-lg-flex d-none align-items-center justify-content-between container">
+            <a href="./home.html" class="text-uppercase font-primary"><span class="color-primary">Friki</span><span
+                    class="color-secondary">Caja</span></a>
+            <nav class="d-none d-lg-flex flex-wrap align-items-center text-nowrap gap-5 font-primary">
+                <div class="d-flex align-items-center gap-5 m-0 h-100">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                    <a class="nav-link" href="#que-hay-dentro">Que incluye</a>
+                    <a class="nav-link" href="#planes">Planes</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </div>
+                <a class="btn-header" href="#planes">
+                    <p>Suscribite</p>
+                </a>
+            </nav>
+        </div>
+
+        <!-- NAV MOBILE -->
+        <nav class="collapse d-lg-none font-primary" id="navbarSupportedContent">
+            <div
+                class="d-flex flex-column gap-3 bg-white p-4 rounded-bottom position-absolute start-0 w-100 nav-mobile">
+                <a class="nav-link" href="#inicio">Inicio</a>
+                <a class="nav-link" href="#que-hay-dentro">Que incluye</a>
+                <a class="nav-link" href="#planes">Planes</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
+                <a class="btn-header" href="#planes">
+                    <p>Suscribite</p>
+                </a>
+            </div>
+        </nav>
+
+
+
+    </header>
+
+
+    <!-- HERO -->
+    <section id="hero" class="d-flex align-items-center">
+        <div class="container-fluid px-5">
+
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-lg-6 col-xl-8 d-flex flex-column align-items-center align-items-lg-start gap-4">
+                    <h1 class="text-uppercase color-secondary d-flex flex-column gap-2 font-primary text-center text-lg-start"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <span class="text-nowrap">Que comience tu</span>
+                        <span class="bg-color-primary p-1 text-white rounded-1 text-nowrap">nueva colección</span>
+                    </h1>
+                    <p class="font-secondary color-secondary text-center text-lg-start" data-aos="fade-up"
+                        data-aos-delay="200">
+                        Todos los meses, adentrate un mundo de coleccionables sin límites. <br>
+                        Ítems exclusivos, portadas únicas y mucho más, en una sola caja. <br>
+                        ¿Qué esperás para ser un Friki?
+                    </p>
+                    <div class="cta-wrapper">
+                        <button onclick="location.href='#planes'" class="cta">Quiero mi frikicaja!</button>
+                        <span class="ctac"></span>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-4 d-flex justify-content-center d-lg-none mt-3">
+                    <img src="./assets/img-hero-full-mobile.png" class="img-fluid w-100" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- QUIENES SOMOS -->
+        <section id="quienes-somos" class="fullscreen-section d-flex flex-column align-items-center" data-aos="fade-up">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 col-lg-6 order-2 order-lg-1">
+                        <img src="./assets/quienes-somos-new.png" alt="FrikiCaja Hero Image" class="img-fluid w-100" />
+                    </div>
+                    <div class="col-12 col-lg-6 order-1 order-lg-2">
+                        <div class="d-flex flex-column justify-content-evenly align-items-center h-100 gap-5">
+                            <h1 class="title text-uppercase color-secondary" style="line-height: 1.6;"
+                                data-aos="fade-up" data-aos-delay="50">
+                                <span>¿QUIÉNES</span>
+                                <span class="highlight-title" data-aos="fade-up" data-aos-delay="50">SOMOS?</span>
+                            </h1>
+                            <p class="font-secondary color-secondary text-center text-lg-start"><b
+                                    class="text-uppercase">FrikiCaja</b> es una
+                                <b>caja de subscripción mensual</b> que te trae <b>ítems exclusivos</b> del mundo del
+                                cómic, ciencia ficción, anime y manga. Coleccioná <b>productos únicos</b>, conseguí
+                                <b>ediciones
+                                    limitadas</b> y accedé a <b>merchandising oficial</b> licenciado.
+                                ¿Qué estas esperando para formar parte de la <b>comunidad Friki?</b>
+                            </p>
+
+                            <div class="row">
+                                <div class="col text-center">
+                                    <h1 class="fs-4 font-primary color-primary fw-bold">+5000</h1>
+                                    <p class="font-secondary color-primary fs-6">FrikiCajas vendidas</p>
+                                </div>
+                                <div class="col text-center">
+                                    <h1 class="fs-4 font-primary color-primary fw-bold">+150</h1>
+                                    <p class="font-secondary color-primary fs-6">Items exclusivos</p>
+                                </div>
+                                <div class="col text-center">
+                                    <h1 class="fs-4 font-primary color-primary fw-bold">+500</h1>
+                                    <p class="font-secondary color-primary fs-6">FrikiSwaps realizados</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- CÓMO FUNCIONA -->
+        <section id="como-funciona" class="fullscreen-section  d-flex flex-column align-items-center"
+            data-aos="fade-up">
+            <div class="container">
+                <h1 class="title text-uppercase color-secondary" data-aos="fade-up" data-aos-delay="50">
+                    <span>¿CÓMO</span>
+                    <span class="highlight-title" data-aos="fade-up" data-aos-delay="50">FUNCIONA?</span>
+                </h1>
+                <div class="mt-5 d-flex flex-column flex-lg-row justify-content-evenly gap-5 font-secondary">
+                    <div class="d-flex flex-column align-items-center color-secondary" data-aos="fade-up"
+                        data-aos-delay="100">
+                        <div class="step-img"><img src="./assets/pasos/new-icon-1.png" alt=""></div>
+                        <p style="font-weight: bold; font-family: Lexend;">SELECCIONÁ TU PLAN</p>
+                        <p class=" text-center w-100">Elegí el nivel de
+                            suscripción que más te guste dentro de nuestra web. </p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center  color-secondary" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="step-img"><img src="./assets/pasos/new-icon-2.png" alt=""></div>
+                        <p style="font-weight: bold; font-family: Lexend;">ELEGIMOS PARA VOS</p>
+                        <p class=" text-center w-100">Nuestros FrikiExpertos escogen los mejores ítems
+                            coleccionables.</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center color-secondary" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="step-img"><img src="./assets/pasos/new-icon-3.png" alt=""></div>
+                        <p style="font-weight: bold; font-family: Lexend;">DISFRUTÁ TU FRIKICAJA</p>
+                        <p class="color-secondary text-center w-100">Recibíste tu FrikiCaja, que comience tu nueva
+                            colección!</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- POR QUÉ ELEGIRNOS -->
+        <section id="por-que-elegirnos" class="fullscreen-section d-flex flex-column align-items-center"
+            data-aos="fade-up">
+
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-12 col-lg-7 d-flex flex-column align-items-center align-items-lg-start gap-4 ">
+                        <h1 class="title text-uppercase color-secondary d-flex flex-wrap align-items-center justify-content-center gap-2 text-center text-lg-start"
+                            data-aos="fade-up" data-aos-delay="50">
+                            <span>¿POR QUÉ</span>
+                            <span class="highlight-title data-aos=" fade-up data-aos-delay="50">ELEGIRNOS?</span>
+                        </h1>
+
+                        <div class="d-flex align-items-center gap-3 w-100" style="line-height: 1.6;" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <div id="checklist"><img src="./assets/por-que/checklist.png" alt="" /></div>
+                            <div>
+                                <h5>Cada caja es una sorpresa distinta</h5>
+                                <p class="font-secondary color-secondary w-100">Una caja para todos los gustos,
+                                    aseguramos
+                                    que es raro, genial y 100% friki.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 w-100 mt-2" data-aos="fade-up">
+                            <div id="checklist"><img src="./assets/por-que/checklist.png" alt="" /></div>
+                            <div>
+                                <h5>Piezas que se diferencian del resto</h5>
+                                <p class="font-secondary color-secondary w-100">Coleccioná ítems únicos y ediciones
+                                    especiales que no vas a conseguir en ninguna tienda. Hasta nuestra caja lo es!</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 w-100 mt-2">
+                            <div id="checklist"><img src="./assets/por-que/checklist.png" alt="" /></div>
+                            <div>
+                                <h5>FrikiSwap: intercambiá tus repetidos</h5>
+                                <p class="font-secondary color-secondary w-100">Usá nuestro mercado para tradear tus
+                                    ítems
+                                    con la comunidad friki y expandir tu colección.</p>
+                            </div>
+                        </div>
+                        <div class="cta-wrapper margin-left mt-2">
+                            <button onclick="location.href='#planes'" class="cta">Quiero mi frikicaja!</button>
+                            <span class="ctac"></span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5 d-flex justify-content-center ">
+                        <img src="./assets/por-que/por-que-elegirnos-new.png" alt="FrikiCaja Hero Image"
+                            class="img-fluid" />
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Logos de Universos -->
+        <section id="universos-new" data-aos="fade-up" data-aos-delay="100">
+            <div class="container">
+
+                <!-- Versión desktop -->
+                <div class="d-none d-md-flex justify-content-center align-items-center gap-5 flex-wrap">
+                    <img src="./assets/logos/logo-marvel.png" alt="Marvel" class="img-fluid"
+                        style="max-height: 80px;" />
+                    <img src="./assets/logos/logo-star-wars-new.png" alt="Star Wars" class="img-fluid"
+                        style="max-height: 80px;" />
+                    <img src="./assets/logos/logo-harry-potter.png" alt="Harry Potter" class="img-fluid"
+                        style="max-height: 80px;" />
+                    <img src="./assets/logos/logo-shonen-jump.png" alt="Shonen Jump" class="img-fluid"
+                        style="max-height: 80px;" />
+                    <img src="./assets/logos/logo-studio-ghibli.png" alt="Studio Ghibli" class="img-fluid"
+                        style="max-height: 80px;" />
+                </div>
+
+                <!-- Versión mobile (carousel) -->
+                <div class="d-md-none">
+                    <h1 class="text-center font-primary color-primary text-uppercase mb-5 title" data-aos="fade-up">
+                        Universos</h1>
+                    <div id="universosCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                        <div class="carousel-inner text-center">
+
+                            <div class="carousel-item active">
+                                <img src="./assets/logos/logo-marvel.png" class="img-fluid mx-auto" alt="Marvel"
+                                    style="max-height: 100px;" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/logos/logo-star-wars-new.png" class="img-fluid mx-auto"
+                                    alt="Star Wars" style="max-height: 100px;" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/logos/logo-harry-potter.png" class="img-fluid mx-auto"
+                                    alt="Harry Potter" style="max-height: 100px;" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/logos/logo-shonen-jump.png" class="img-fluid mx-auto"
+                                    alt="Shonen Jump" style="max-height: 100px;" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/logos/logo-studio-ghibli.png" class="img-fluid mx-auto"
+                                    alt="Studio Ghibli" style="max-height: 100px;" />
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- PLANES -->
+        <section id="planes" class="fullscreen-section d-flex flex-column align-items-center bg-color-primary"
+            data-aos="fade-up" data-aos-delay="100">
+            <div class="container">
+                <h1 class="text-white text-uppercase title my-5">Nuestros Frikiplanes</h1>
+                <div class="row gy-5">
+
+                    <!-- PLAN: FrikiLite -->
+                    <div class="col-12 col-lg-4">
+                        <div class="plan-card" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="card-header w-100">
+                                <img src="./assets/planes/plan-frikilite.png" alt="Plan FrikiLite"
+                                    class="img-fluid w-100 object-fit-cover rounded-top" />
+                                <h1 class="color-secondary text-uppercase font-primary fw-bold mt-3"
+                                    style="font-size: clamp(38px, 3.2vw, 32px) !important;">Plan <br> Frikilite</h1>
+                            </div>
+
+                            <div class="card-body flex-grow-1 d-flex flex-column justify-content-between w-100">
+                                <ul class="font-secondary text-start px-3">
+                                    <li class="d-flex align-items-baseline">
+                                        <i class="bi bi-check-circle-fill fs-4 color-primary"></i>
+                                        <span class="ms-2 fs-6 color-secondary">Figurín de vinilo de un Universo</span>
+                                    </li>
+                                    <li class="d-flex align-items-baseline">
+                                        <i class="bi bi-check-circle-fill fs-4 color-primary"></i>
+                                        <span class="ms-2 fs-6 color-secondary">Peluche pequeño relleno de
+                                            algodón</span>
+                                    </li>
+                                    <li class="d-flex align-items-baseline">
+                                        <i class="bi bi-check-circle-fill fs-4 color-primary"></i>
+                                        <span class="ms-2 fs-6 color-secondary">Llavero con colgante</span>
+                                    </li>
+                                    <li class="d-flex align-items-baseline">
+                                        <i class="bi bi-gift-fill fs-4 color-primary"></i>
+                                        <span class="ms-2 fs-6 color-primary fw-bold">Pin esmaltado</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="card-footer w-100 text-center mt-auto">
+                                <h1 class="color-primary fw-bold font-secondary mt-2 mb-2">AR$ 149.000
+                                    <span class="fw-normal" style="font-size: clamp(12px, 1.2vw, 20px);">/mes</span>
+                                </h1>
+                                <div class="cta-wrapper">
+                                    <button onclick="location.href='/friki-caja/detalle.html'" class="cta">Elegir plan</button>
+                                    <span class="ctac"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PLAN: FrikiPlus -->
+                    <div class="col-12 col-lg-4">
+                        <div class="plan-card position-relative" data-aos="zoom-in" data-aos-delay="200">
+                            <div
+                                class="badge-popular text-uppercase fw-bold bg-color-primary font-secondary text-white">
+                                El más elegido
+                            </div>
+                            <div class="card-header w-100">
+                                <img src="./assets/planes/plan-frikiplus.png" alt="Plan FrikiPlus"
+                                    class="img-fluid w-100 object-fit-cover rounded-top" />
+                                <h1 class="color-secondary text-uppercase font-primary fw-bold mt-3"
+                                    style="font-size: clamp(38px, 3.2vw, 32px) !important;">Plan <br> FrikiPlus</h1>
+                            </div>
+
+                            <div class="card-body flex-grow-1 d-flex flex-column justify-content-between w-100">
+                                <ul class="font-secondary text-start px-3">
+                                    <li class="d-flex align-items-baseline">
+                                        <i class="bi bi-check-circle-fill fs-4 color-primary"></i>
+                                        <span class="ms-2 fs-6 color-secondary">Figurín de vinilo de un Universo</span>
+                                    </li>
+                                    <li class="d-flex align-items-baseline">
+                                        <i class="bi bi-check-circle-fill fs-4 color-primary"></i>
+                                        <span class="ms-2 fs-6 color-secondary">Peluche pequeño relleno de
+                                            algodón</span>
+                                    </li>
+                                    <li class="d-flex align-items-baseline">
+                                        <i class="bi bi-check-circle-fill fs-4 color-primary"></i>
+                                        <span class="ms-2 fs-6 color-secondary">Llavero con colgante</span>
+                                    </li>
+                                    <li class="d-flex align-items-baseline">
+                                        <i class="bi bi-gift-fill fs-4 color-primary"></i>
+                                        <span class="ms-2 fs-6 color-primary fw-bold">Pin esmaltado</span>
+                                    </li>
+                                    <li class="d-flex align-items-baseline">
+                                        <i class="bi bi-gift-fill fs-4 color-primary"></i>
+                                        <span class="ms-2 fs-6 color-primary fw-bold">Remera Edición Limitada</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="card-footer w-100 text-center mt-auto">
+                                <h1 class="color-primary fw-bold font-secondary mt-2 mb-2">AR$ 155.000
+                                    <span class="fw-normal" style="font-size: clamp(12px, 1.2vw, 20px);">/mes</span>
+                                </h1>
+                                <div class="cta-wrapper">
+                                    <button onclick="location.href='/friki-caja/detalle.html'" class="cta">Elegir plan</button>
+                                    <span class="ctac"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PLAN: FrikiPremium -->
+                    <div class="col-12 col-lg-4">
+                        <div class="plan-card" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="card-header w-100">
+                                <img src="./assets/planes/plan-frikipremium.png" alt="Plan FrikiPremium"
+                                    class="img-fluid w-100 object-fit-cover rounded-top" />
+                                <h1 class="color-secondary text-uppercase font-primary fw-bold mt-3"
+                                    style="font-size: clamp(38px, 3.2vw, 32px) !important;">Plan <br> FrikiPremium</h1>
+                            </div>
+
+                            <div class="card-body flex-grow-1 d-flex flex-column justify-content-between w-100">
+                                <ul class="font-secondary text-start px-3">
+                                    <li class="d-flex align-items-baseline">
+                                        <i class="bi bi-check-circle-fill fs-4 color-primary"></i>
+                                        <span class="ms-2 fs-6 color-secondary">Dos figurines de vinilo de un
+                                            Universo</span>
+                                    </li>
+                                    <li class="d-flex align-items-baseline">
+                                        <i class="bi bi-check-circle-fill fs-4 color-primary"></i>
+                                        <span class="ms-2 fs-6 color-secondary">Peluche mediano relleno de
+                                            algodón</span>
+                                    </li>
+                                    <li class="d-flex align-items-baseline">
+                                        <i class="bi bi-check-circle-fill fs-4 color-primary"></i>
+                                        <span class="ms-2 fs-6 color-secondary">Llavero con colgante y accesorio</span>
+                                    </li>
+                                    <li class="d-flex align-items-baseline">
+                                        <i class="bi bi-gift-fill fs-4 color-primary"></i>
+                                        <span class="ms-2 fs-6 color-primary fw-bold">Dos pines esmaltados</span>
+                                    </li>
+                                    <li class="d-flex align-items-baseline">
+                                        <i class="bi bi-gift-fill fs-4 color-primary"></i>
+                                        <span class="ms-2 fs-6 color-primary fw-bold">Remera Edición Limitada</span>
+                                    </li>
+                                    <li class="d-flex align-items-baseline">
+                                        <i class="bi bi-gift-fill fs-4 color-primary"></i>
+                                        <span class="ms-2 fs-6 color-primary fw-bold">Acceso prioritario a
+                                            FrikiSwap</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="card-footer w-100 text-center mt-auto">
+                                <h1 class="color-primary fw-bold font-secondary mt-2 mb-2">AR$ 160.000
+                                    <span class="fw-normal" style="font-size: clamp(12px, 1.2vw, 20px);">/mes</span>
+                                </h1>
+                                <div class="cta-wrapper">
+                                    <button onclick="location.href='/friki-caja/detalle.html'" class="cta">Elegir plan</button>
+                                    <span class="ctac"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ¿QUÉ HAY DENTRO? -->
+        <section id="que-hay-dentro" class="fullscreen-section d-flex flex-column align-items-center" data-aos="fade-up"
+            data-aos-delay="100">
+            <div class="container">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="w-100 mb-5">
+                        <!-- Carrusel -->
+                        <div id="carouselQueHay" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500"
+                            data-bs-pause="false">
+                            <!-- carousel-indicators y carousel-inner -->
+                        </div>
+                    </div>
+
+                    <div class="w-100 text-center">
+                        <!-- Título y texto -->
+                        <h1 class="title text-uppercase color-secondary" style="line-height: 1.6;" data-aos="fade-up"
+                            data-aos-delay="50">
+                            <span>¿QUÉ HAY</span>
+                            <span class="highlight-title">ADENTRO?</span>
+                        </h1>
+
+
+                        <div id="carouselQueHay" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500"
+                            data-bs-pause="false">
+
+                            <div class="carousel-indicators d-none d-md-flex">
+                                <button type="button" data-bs-target="carouselQueHay" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="carouselQueHay" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="carouselQueHay" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="carouselQueHay" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="carouselQueHay" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                                <!-- agregá más según los slides -->
+                            </div>
+
+                            <div class="carousel-inner text-center">
+                                <div class="carousel-item active">
+                                    <img src="./assets/que-hay/quehaydentro-1.png" class="w-100" alt="Item 1" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/que-hay/quehaydentro-2.png" class="w-100" alt="Item 2" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/que-hay/quehaydentro-3.png" class="w-100" alt="Item 3" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/que-hay/quehaydentro-4.png" class="w-100" alt="Item 4" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/que-hay/quehaydentro-5.png" class="w-100" alt="Item 5" />
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100 mb-5 carousel-wrapper">
+                        <div id="carouselQueHay" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500"
+                            data-bs-pause="false">
+                            <!-- carousel-indicators y carousel-inner -->
+                        </div>
+                    </div>
+
+        </section>
+
+
+        <!-- FRIKI SWAP -->
+        <section id="frikiswap" class="fullscreen-section d-flex flex-column align-items-center bg-white"
+            data-aos="fade-up">
+            <div class="container">
+                <h1 class="title text-uppercase color-secondary mb-5" data-aos="fade-up" data-aos-delay="50">
+                    <span>FRIKISWAP:</span>
+                    <span class="highlight-title" data-aos="fade-up" data-aos-delay="50">¡INTERCAMBIÁ!</span>
+                </h1>
+                <p class="font-secondary text-center fw-bold color-secondary mb-2">
+                    Si se repite algún ítem de tu colección, no pasa nada!
+                </p>
+                <p class="font-secondary text-center color-secondary mb-5">
+                    Con tu suscripción accedés a un mercado de intercambios de ítems, FrikiSwap, donde podrás hacer
+                    ofertas o trueques por tus duplicados.
+                </p>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <!-- CARD 1 -->
+                    <div class="col">
+                        <div class="card">
+                            <img src="./assets/friki-swap/frikiswap-llavero-ponyo.jpeg" class="card-img-top img-fluid"
+                                alt="Llavero Ponyo">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title text-uppercase color-primary font-primary">CAMBIO Llavero
+                                        Ponyo</h5>
+
+                                    <p class="font-secondary color-secondary small">@miyazakifan1: Hola Frikis! Busco
+                                        swappear uno de mis llaveros Ghibli para completar mi colección. ¿Alguien tiene
+                                        al Gatobus?</p>
+                                </div>
+                                <button class="btn bg-color-primary text-white mt-3">QUIERO</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="col">
+                        <div class="card">
+                            <img src="./assets/friki-swap/frikiswap-remera-starwars.jpeg" class="card-img-top img-fluid"
+                                alt="Remera Star Wars">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title text-uppercase color-primary font-primary">OFERTO Remera Star
+                                        Wars</h5>
+                                    <p class="font-secondary color-secondary small">@maythe4bewithyou: Hola comunidad!
+                                        Vendo esta reme exclusiva que vino en la caja de marzo. Está como nueva. Sin
+                                        uso. Precio al MD.</p>
+                                </div>
+                                <button class="btn bg-color-primary text-white mt-3">QUIERO</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="col">
+                        <div class="card">
+                            <img src="./assets/friki-swap/frikiswap-plush-harrypotter.jpeg"
+                                class="card-img-top img-fluid" alt="Plushie Harry Potter">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title text-uppercase color-primary font-primary">OFERTO Plushie
+                                        Harry Potter</h5>
+                                    <p class="font-secondary color-secondary small">@theboywholived2: Buenas. Alguien
+                                        busca un peluche de Harry? Tengo repetido el de la derecha. Si interesa, también
+                                        incluyo a Dumbledore. Abro inbox!</p>
+                                </div>
+                                <button class="btn mt-3">QUIERO</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- CARD 4 -->
+                    <div class="col">
+                        <div class="card">
+                            <img src="./assets/friki-swap/frikiswap-pin-spiderman.jpeg" class="card-img-top img-fluid"
+                                alt="Pin Spiderman">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title text-uppercase color-primary font-primary">CAMBIO Pin
+                                        Spiderman</h5>
+                                    <p class="font-secondary color-secondary small">@iloveyou3000: Hola estimados
+                                        Frikis, busco swappear este pin de Spiderman por uno de IronMan, ¿alguno que le
+                                        sobre uno? Graciaassss</p>
+                                </div>
+                                <button class="btn bg-color-primary text-white mt-3">QUIERO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- QUE OPINAN NUESTROS FRIKIS-->
+        <section id="opiniones" class="fullscreen-section d-flex flex-column align-items-center bg-white"
+            data-aos="fade-up">
+            <div class="container">
+                <h1 class="title text-uppercase color-secondary d-flex flex-wrap align-items-center justify-content-center gap-2 text-center text-lg-start mb-5"
+                    data-aos="fade-up" data-aos-delay="50">
+                    <span>¿QUÉ OPINAN
+                    </span>
+                    <span class="highlight-title" fade-up data-aos-delay="50">NUESTROS FRIKIS?</span>
+                </h1>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <!-- Opinión 1 -->
+                    <div class="col">
+                        <div class="card h-100 text-center p-4" data-aos="fade-up" data-aos-delay="50">
+                            <img src="./assets/que-opinan/gal.jpeg" class="rounded-circle mx-auto mb-3" alt="Gal"
+                                width="100" height="100" style="object-fit: cover;">
+                            <h5 class="color-secondary font-primary mb-0">GAL</h5>
+                            <p class="font-secondary color-secondary small mb-1">Plan FrikiPlus</p>
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-danger"></i>
+                                <i class="bi bi-star-fill text-danger"></i>
+                                <i class="bi bi-star-fill text-danger"></i>
+                                <i class="bi bi-star-fill text-danger"></i>
+                                <i class="bi bi-star-fill text-danger"></i>
+                            </div>
+                            <p class="font-secondary color-secondary small">"Hay ítems que solo los verdaderos fans van
+                                a reconocer. En la última caja me tocó un pin hermoso. FrikiCaja siempre tiene esa
+                                mezcla perfecta entre sorpresa, rareza y guiños bien frikis. Recomiendo."</p>
+                        </div>
+                    </div>
+
+                    <!-- Opinión 2 -->
+                    <div class="col">
+                        <div class="card h-100 text-center p-4" data-aos="fade-up" data-aos-delay="50">
+                            <img src="./assets/que-opinan/steff.jpeg" class="rounded-circle mx-auto mb-3" alt="Steff"
+                                width="100" height="100" style="object-fit: cover;">
+                            <h5 class="color-secondary font-primary mb-0">STEFF</h5>
+                            <p class="font-secondary color-secondary small mb-1">Plan FrikiPremium</p>
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-danger"></i>
+                                <i class="bi bi-star-fill text-danger"></i>
+                                <i class="bi bi-star-fill text-danger"></i>
+                                <i class="bi bi-star-fill text-danger"></i>
+                                <i class="bi bi-star-fill text-danger"></i>
+                            </div>
+                            <p class="font-secondary color-secondary small">"Es como abrir un portal a mi lado más nerd.
+                                Todo viene bien presentado, y los ítems se sienten premium. ¡Ya intercambié en el
+                                FrikiSwap una figura repetida!"</p>
+                        </div>
+                    </div>
+
+                    <!-- Opinión 3 -->
+                    <div class="col">
+                        <div class="card h-100 text-center p-4" data-aos="fade-up" data-aos-delay="50">
+                            <img src="./assets/que-opinan/tadeo.jpeg" class="rounded-circle mx-auto mb-3" alt="Tadeo"
+                                width="100" height="100" style="object-fit: cover;">
+                            <h5 class="color-secondary font-primary mb-0">TADEO</h5>
+                            <p class="font-secondary color-secondary small mb-1">Plan FrikiLite</p>
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-danger"></i>
+                                <i class="bi bi-star-fill text-danger"></i>
+                                <i class="bi bi-star-fill text-danger"></i>
+                                <i class="bi bi-star-fill text-danger"></i>
+                                <i class="bi bi-star-fill text-danger"></i>
+                            </div>
+                            <p class="font-secondary color-secondary small">"Pensé que era otra caja más, pero superó
+                                mis expectativas. Está pensada para fans de verdad, y se nota. Me tocó un pin exclusivo
+                                que ya está en mi mochila."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PREGUNTAS FRECUENTES -->
+        <section id="preguntas-frecuentes" class="fullscreen-section d-flex flex-column align-items-center">
+            <div class="container">
+                <h1 class="text-uppercase color-primary font-primary title my-5 text-center">Preguntas Frecuentes</h1>
+                <div class="row row-cols-1 row-cols-lg-2 g-4">
+                    <!-- Columna 1 -->
+                    <div class="col">
+                        <div class="accordion" id="accordionLeft">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                        ¿Cuándo puedo cancelar mi suscripción?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#accordionLeft">
+                                    <div class="accordion-body">
+                                        Sí, en cualquier momento que quieras y te devolveremos el dinero por el tiempo
+                                        que te suscribiste.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                        ¿Cuáles son los métodos de pago?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                                    <div class="accordion-body">
+                                        Aceptamos tarjeta de crédito, débito, y billeteras virtuales como Mercado Pago y
+                                        Ualá.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                        ¿Puedo cambiarme a un plan superior al que tengo?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                                    <div class="accordion-body">
+                                        Sí, podés hacer el upgrade desde tu perfil y el cambio se aplicará en tu próxima
+                                        caja.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Columna 2 -->
+                    <div class="col">
+                        <div class="accordion" id="accordionRight">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq4" aria-expanded="true" aria-controls="faq4">
+                                        ¿Cuánto tiempo tarda en llegar mi caja?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionRight">
+                                    <div class="accordion-body">
+                                        Puede demorar entre 3 y 10 días hábiles dependiendo de la ubicación de entrega.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                                        ¿Qué pasa si me suscribo a mitad de mes?
+                                    </button>
+                                </h2>
+                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#accordionRight">
+                                    <div class="accordion-body">
+                                        Recibirás tu caja en la próxima tanda de envíos. Siempre te notificamos cuándo
+                                        se despacha.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                                        ¿Cómo se realiza el envío?
+                                    </button>
+                                </h2>
+                                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#accordionRight">
+                                    <div class="accordion-body">
+                                        Usamos correo puerta a puerta a todo el país. Te enviamos un código de
+                                        seguimiento apenas sale del depósito.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Contactanos-->
+        <section id="contacto" class="fullscreen-section d-flex align-items-center" data-aos="fade-up">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+
+                    <!-- Formulario -->
+                    <div class="col-12 col-lg-6">
+                        <h1 class="text-uppercase title text-center mb-4">Contactanos</h1>
+
+                        <form class="font-secondary">
+                            <div class="mb-3">
+                                <input type="text" class="form-control custom-input" placeholder="Nombre">
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control custom-input" placeholder="Celular">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control custom-input" placeholder="Correo Electrónico">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control custom-input" rows="5" placeholder="Mensaje"></textarea>
+                            </div>
+                            <div class="cta-wrapper mt-3">
+                                <button type="submit" class="cta">ENVIAR</button>
+                                <span class="ctac"></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!--Footer-->
+
+    <footer id="footer" class="bg-color-secondary text-white py-5">
+        <div class="container">
+            <div class="row gy-4">
+                <!-- Columna 1: Marca -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="font-primary">
+                        <span class="text-white">FRIKI</span><span class="color-primary">CAJA</span>
+                    </h5>
+                    <p class="font-secondary mt-3">Av. Cabildo y Juramento, Belgrano, CP 1426<br>Buenos Aires, Argentina
+                    </p>
+                    <p class="font-secondary mt-2">Telefono: +1 5589 55488 55</p>
+                    <p class="font-secondary">Email: frikicaja@gmail.com</p>
+                </div>
+
+                <!-- Columna 2: Navegación -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h6 class="fw-bold font-secondary">Inicio</h6>
+                    <ul class="list-unstyled font-secondary mt-3">
+                        <li><a href="#planes" class="text-white">Servicio</a></li>
+                        <li><a href="#planes" class="text-white">Subscripciones</a></li>
+                        <li><a href="#quienes-somos" class="text-white">Sobre Nosotros</a></li>
+                        <li><a href="#preguntas-frecuentes" class="text-white">Preguntas Frecuentes</a></li>
+                        <li><a href="#contacto" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: FrikiSwap -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h6 class="fw-bold font-secondary">FrikiSwap</h6>
+                    <ul class="list-unstyled font-secondary mt-3">
+                        <li><a href="#frikiswap" class="text-white">Que Es</a></li>
+                        <li><a href="#como-funciona" class="text-white">Como Funciona</a></li>
+                        <li><a href="#frikiswap" class="text-white">Intercambios</a></li>
+                        <li><a href="#opiniones" class="text-white">Oferta</a></li>
+                        <li><a href="#" class="text-white">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Redes -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h6 class="fw-bold font-secondary mb-3">Seguinos en redes</h6>
+                    <div class="d-flex gap-3 fs-5">
+                        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Script AOS y Scroll -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+
+        const header = document.querySelector("header");
+        window.addEventListener("scroll", () => {
+            header.classList.toggle("scrolled", window.scrollY > 50);
+        });
+
+
+        const backToTopBtn = document.getElementById("back-to-top-btn");
+
+        backToTopBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 100) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        });
+
+    </script>
+</body>
+
+</html>
+
+</body>
+
+
+</html>
