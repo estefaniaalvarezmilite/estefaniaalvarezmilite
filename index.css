@@ -239,8 +239,8 @@ section:not(#hero) {
   font-style: normal;
   font-weight: 700;
   line-height: 50px;
-  color: white; /* o var(--color-secundario), lo que prefieras */
-  text-shadow: none; /* elimina completamente el borde negro */
+  color: white; 
+  text-shadow: none;
 }
 
 
@@ -731,9 +731,19 @@ section:not(#hero) {
 
 /* TESTIMONIALS */
 .testimonials .card {
-    border: none;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border: none;
+  color: white !important;
+  font-family: var(--font-primary);
+  font-size: clamp(12px, 2vw, 16px);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  background-color: #d75159; /* ← fill (rojo) */
+  border: 3px solid #36509a; /* ← stroke (azul) */
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
 }
+  
 
 .testimonials .card-text {
     font-style: italic;
