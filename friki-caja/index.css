@@ -700,11 +700,11 @@ section:not(#hero) {
 @media (max-width: 768px) {
   #hero-detalle {
     background-image: none;
-    padding-top: calc(var(--height-header) + 2.5rem); 
-    padding-bottom: 3rem;
-    min-height: auto;
-    display: block; 
-    scroll-margin-top: calc(var(--height-header) + 1rem);
+    padding-top: calc(var(--height-header) + 20%);
+    height: auto;
+    display: flex;
+    align-items: center;
+    scroll-margin-top: var(--height-header);
   }
 }
 
