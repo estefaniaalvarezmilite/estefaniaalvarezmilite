@@ -700,13 +700,15 @@ section:not(#hero) {
 @media (max-width: 768px) {
   #hero-detalle {
     background-image: none;
-    padding-top: calc(var(--height-header) + 20%);
+    padding-top: 8rem !important; /* Aumentamos bastante el margen superior */    
     height: auto;
-    display: flex;
+    padding-bottom: 3rem;
+     display: block !important;
     align-items: center;
     scroll-margin-top: var(--height-header);
   }
 }
+
 
 
 /* QUE INCLUYE DETALLE */
