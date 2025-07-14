@@ -700,7 +700,7 @@ section:not(#hero) {
 @media (max-width: 768px) {
   #hero-detalle {
     background-image: none;
-    padding-top: calc(var(--height-header) + 50vh);
+    padding-top: calc(var(--height-header) + 100vh);
     padding-bottom: 3rem;
     min-height: auto;
     display: block;
