@@ -654,10 +654,7 @@ section:not(#hero) {
 
 /*Hero*/
 
-#hero-detalle img {
-  max-height: 90vh;
-  object-fit: cover;
-}
+
 
 #plan-frikiplus-destacado .card {
   background-color: white;
@@ -709,6 +706,11 @@ section:not(#hero) {
   }
 }
 
+@media (max-width: 768px) {
+  #hero-detalle .container {
+    padding-top: 6rem;
+  }
+}
 
 
 /* QUE INCLUYE DETALLE */
