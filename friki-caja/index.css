@@ -697,7 +697,7 @@ section:not(#hero) {
   background-color: var(--color-secondary); /* fallback color */
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   #hero-detalle {
     background-image: none;
     padding-top: calc(var(--height-header) + 50vh);
