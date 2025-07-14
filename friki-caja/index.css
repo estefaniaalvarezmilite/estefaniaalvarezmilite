@@ -708,7 +708,7 @@ section:not(#hero) {
 
 @media (max-width: 768px) {
   #hero-detalle .container {
-    padding-top: 6rem;
+    padding-top: 3rem;
   }
 }
 
