@@ -694,18 +694,20 @@ section:not(#hero) {
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
-  background-color: var(--color-secondary); /* fallback color */
+  background-color: var(--color-secondary); 
 }
 
 @media (max-width: 768px) {
   #hero-detalle {
     background-image: none;
-    padding-top: calc(var(--height-header) + 3rem);
+    padding-top: calc(var(--height-header) + 2.5rem); 
     padding-bottom: 3rem;
     min-height: auto;
-    display: block;
+    display: block; 
+    scroll-margin-top: calc(var(--height-header) + 1rem);
   }
 }
+
 
 /* QUE INCLUYE DETALLE */
 
