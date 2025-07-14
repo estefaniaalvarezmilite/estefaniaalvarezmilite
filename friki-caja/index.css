@@ -697,15 +697,12 @@ section:not(#hero) {
   background-color: var(--color-secondary); /* fallback color */
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   #hero-detalle {
-    background-image: none;
-    padding-top: calc(var(--height-header) + 50vh);
-    padding-bottom: 3rem;
-    min-height: auto;
-    display: block;
+    padding-top: calc(var(--height-header) + 2rem);
   }
 }
+
 
 /* QUE INCLUYE DETALLE */
 
