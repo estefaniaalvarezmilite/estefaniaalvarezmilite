@@ -272,11 +272,9 @@ section:not(#hero) {
   #hero {
     background-position: top;
     padding-top: calc(var(--height-header) + 20%);
-    height: auto; /* o 105vh si lo querés más alto */
+    height: auto; 
   }
 }
-
-
 
 .image-container img {
   height: 100%;
@@ -306,7 +304,7 @@ section:not(#hero) {
 
 .carousel-indicators {
   gap: 2rem !important;
-  margin-top: 3rem !important; /* controla la separación vertical */
+  margin-top: 3rem !important; 
 }
 
 .carousel-indicators [data-bs-target] {
@@ -323,7 +321,7 @@ section:not(#hero) {
   background-color: var(
     --color-primary,
     #d75159
-  ) !important; /* tu color primario */
+  ) !important; 
 }
 
 .carousel-wrapper {
@@ -516,7 +514,6 @@ section:not(#hero) {
   font-size: 1rem;
 }
 
-/* Asegura que todas las tarjetas tengan la misma altura */
 #frikiswap .card {
   height: 100%;
   display: flex;
@@ -524,7 +521,6 @@ section:not(#hero) {
   justify-content: space-between;
 }
 
-/* Contenedor de imagen que no crezca más allá de 200px */
 #frikiswap .card-img-top {
   width: 100%;
   height: 200px;
@@ -557,14 +553,6 @@ section:not(#hero) {
 }
 
 #frikiswap .card-title {
-  color: #ffffff !important;
-  font-family: var(--font-primary);
-  font-size: clamp(12px, 2vw, 16px);
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-}
-
-#frikiswap .card-title {
   color: white !important;
   font-family: var(--font-primary);
   font-size: clamp(12px, 2vw, 16px);
@@ -573,8 +561,8 @@ section:not(#hero) {
 }
 
 #frikiswap .card {
-  background-color: #d75159; /* ← fill (rojo) */
-  border: 3px solid #36509a; /* ← stroke (azul) */
+  background-color: #d75159; 
+  border: 3px solid #36509a; 
   border-radius: 8px;
   transition: all 0.3s ease-in-out;
 }
@@ -594,6 +582,35 @@ section:not(#hero) {
 
 .plan-card {
   transition: transform 0.3s ease, border 0.3s ease;
+}
+
+/* Que Hay Dentro Auto Fade */
+
+#carouselQueHay.carousel.carousel-fade .carousel-item {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2s ease-in-out, visibility 2s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+#carouselQueHay.carousel.carousel-fade .carousel-item.active {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  z-index: 1;
+}
+
+#carouselQueHay.carousel.carousel-fade .carousel-item {
+  transition: opacity 2s ease-in-out, visibility 2s ease-in-out;
+}
+
+#carouselQueHay .carousel-indicators [data-bs-target],
+#carouselQueHay .carousel-indicators .active {
+  transition: all 2s ease-in-out;
 }
 
 
@@ -649,12 +666,19 @@ section:not(#hero) {
 }
 
 
-/*Detalle*/
+
+
+
+
+
+
+
+
+
+/*DETALLE*/
 
 
 /*Hero*/
-
-
 
 #plan-frikiplus-destacado .card {
   background-color: white;
@@ -936,7 +960,6 @@ section:not(#hero) {
   position: relative;
   z-index: 1;
 }
-
 
 
 /* Transición más suave para carrusel fade de Metodos de Pago */
