@@ -609,7 +609,7 @@ section:not(#hero) {
 #carouselQueHay .carousel-control-next {
   top: 50%;
   transform: translateY(-50%);
-  font-size: 2.5rem;
+  font-size: 1.3rem;
   color: var(--color-primary);
   z-index: 10;
 }
@@ -626,23 +626,22 @@ section:not(#hero) {
 #carouselQueHay .carousel-control-next {
   top: 50%;
   transform: translateY(-50%);
-  font-size: 2.5rem;
+  font-size: 1.3rem;
   color: var(--color-primary);
   z-index: 10;
 }
 
 @media (max-width: 768px) {
   #carouselQueHay .carousel-control-prev {
-    left: -50px;
+    left: -33px;
   }
 
   #carouselQueHay .carousel-control-next {
-    right: -50px;
+    right: -33px;
   }
 
   #carouselQueHay .carousel-control-prev i,
   #carouselQueHay .carousel-control-next i {
-    background-color: white;
     border-radius: 50%;
     padding: 2px;
   }
@@ -716,7 +715,7 @@ section:not(#hero) {
   #contacto .ctac {
     height: 56px; /* asegurate que tenga espacio suficiente para el botón */
   }
-}
+
 
 
 /* Footer */
