@@ -78,10 +78,10 @@
       <div class="container">
         <div class="row justify-content-end">
           <!-- TEXTO A LA DERECHA EN DESKTOP -->
-          <div class="col-12 col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-12 col-lg-6 mt-5 mt-lg-7 mb-5" data-aos="fade-up" data-aos-delay="200">
             <div
-              class="d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start px-lg-5 gap-3">
-              <div class="badge rounded-pill fs-5 text-uppercase fw-bold bg-color-primary font-secondary text-white">
+              class="d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start px-lg-5 gap-3" >
+              <div class="badge rounded-pill fs-5 text-uppercase fw-bold bg-color-primary font-secondary text-white margin-top mt-10">
                 El más elegido
               </div>
               <h1 class="title text-white text-uppercase">Plan FrikiPlus</h1>
@@ -90,10 +90,11 @@
                 figuras de edición limitada, ítems sorpresa extra y acceso anticipado al FrikiSwap.
                 Solo para frikis de nivel final.
               </p>
-              <h1 class="color-primary fw-bold font-secondary mt-2 mb-2">
+              <h1 class="fw-bold font-secondary mt-2 mb-2 white-price">
                 AR$ 155.000
-                <span class="fw-normal" style="font-size: clamp(12px, 1.2vw, 20px);">/mes</span>
+              <span class="fw-normal" style="font-size: clamp(12px, 1.2vw, 20px);">/mes</span>
               </h1>
+
               <div class="cta-wrapper-contrast">
                 <button class="cta-contrast" onclick="location.href='/friki-caja/detalle.html'">Elegir este
                   plan</button>
@@ -213,7 +214,7 @@
           <span class="highlight-title">FRIKIS PLUS?</span>
         </h1>
 
-        <div id="carouselTestimonios" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div id="carouselTestimonios" class="carousel slide carousel-fade mt-5" data-bs-ride="carousel">
           <div class="carousel-inner">
 
             <!-- Slide 1 -->
@@ -231,8 +232,7 @@
                   <i class="bi bi-star-fill text-danger"></i>
                 </div>
                 <p class="font-secondary color-secondary small">“Con FrikiPlus siento que cada mes me llega un pedacito
-                  de convención geek a mi casa. Las figuras exclusivas son una locura y ya llené una repisa entera. ¡Vale
-                  cada centavo!”</p>
+                  de convención geek a mi casa. Las figuras exclusivas son una locura y ya llené una repisa entera.”</p>
               </div>
             </div>
 
@@ -270,8 +270,7 @@
                   <i class="bi bi-star-fill text-danger"></i>
                 </div>
                 <p class="font-secondary color-secondary small">“FrikiPlus me sorprendió: más ítems, mejor curaduría, y
-                  acceso anticipado al contenido exclusivo. Me siento parte de una comunidad friki real. ¡Ya convertí a
-                  dos amigos!”</p>
+                  acceso anticipado al contenido exclusivo. Me siento parte de una comunidad friki real.”</p>
               </div>
             </div>
 
@@ -294,56 +293,6 @@
       </div>
     </section>
 
-    <!-- Logos de Métodos de Pago -->
-    <section id="metodos-de-pago" data-aos="fade-up" data-aos-delay="100">
-      <div class="container">
-
-        <!-- Versión desktop -->
-        <div class="d-none d-md-flex justify-content-center align-items-center gap-5 flex-wrap">
-
-          <img src="./assets/logos/logo-mercadopago.png" alt="Mercado Pago" class="img-fluid"
-            style="max-height: 80px;" />
-          <img src="./assets/logos/logo-brubank.png" alt="Brubank" class="img-fluid" style="max-height: 80px;" />
-          <img src="./assets/logos/logo-modo.png" alt="Modo" class="img-fluid" style="max-height: 80px;" />
-          <img src="./assets/logos/logo-uala.png" alt="Uala" class="img-fluid" style="max-height: 80px;" />
-          <img src="./assets/logos/logo-visa.png" alt="Visa" class="img-fluid" style="max-height: 80px;" />
-        </div>
-
-        <!-- Versión mobile (carousel) -->
-        <div class="d-md-none">
-          <h1 class="text-center font-primary color-primary text-uppercase mb-5 title" data-aos="fade-up">
-            Métodos de Pago</h1>
-          <div id="MetodosdePagoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-            <div class="carousel-inner text-center">
-
-              <div class="carousel-item active">
-                <img src="./assets/logos/logo-mercadopago.png" class="img-fluid mx-auto" alt="Mercado Pago"
-                  style="max-height: 100px;" />
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/logos/logo-brubank.png" class="img-fluid mx-auto" alt="Brubank"
-                  style="max-height: 100px;" />
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/logos/logo-modo.png" class="img-fluid mx-auto" alt="Modo"
-                  style="max-height: 100px;" />
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/logos/logo-uala.png" class="img-fluid mx-auto" alt="Uala"
-                  style="max-height: 100px;" />
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/logos/logo-visa.png" class="img-fluid mx-auto" alt="Visa"
-                  style="max-height: 100px;" />
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-    </section>
 
     <!--  OTROS PLANES -->
     <section id="otros-planes" class="fullscreen-section d-flex flex-column align-items-center bg-color-primary"
@@ -452,6 +401,54 @@
 
         </div>
       </div>
+    </section>
+
+       <!-- Logos de Métodos de Pago -->
+    <section id="metodos-de-pago" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
+
+        <!-- Versión desktop -->
+       <div class="d-none d-md-flex flex-column align-items-center gap-4">
+  <h1 class="text-center font-primary color-primary text-uppercase title" data-aos="fade-up">
+    Métodos de Pago
+  </h1>
+  <div class="d-flex justify-content-center align-items-center gap-5 flex-wrap">
+    <img src="./assets/logos/logo-mercadopago.png" alt="Mercado Pago" class="img-fluid" style="max-height: 80px;" />
+    <img src="./assets/logos/logo-brubank.png" alt="Brubank" class="img-fluid" style="max-height: 80px;" />
+    <img src="./assets/logos/logo-modo.png" alt="Modo" class="img-fluid" style="max-height: 80px;" />
+    <img src="./assets/logos/logo-uala.png" alt="Uala" class="img-fluid" style="max-height: 80px;" />
+    <img src="./assets/logos/logo-visa.png" alt="Visa" class="img-fluid" style="max-height: 80px;" />
+  </div>
+</div>
+
+       <!-- Versión mobile (carousel) -->
+<div class="d-md-none">
+  <h1 class="text-center font-primary color-primary text-uppercase mb-4 title" data-aos="fade-up">
+    Métodos de Pago
+  </h1>
+
+  <div id="MetodosdePagoCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner text-center">
+      <div class="carousel-item active">
+        <img src="./assets/logos/logo-mercadopago.png" class="img-fluid mx-auto" alt="Mercado Pago" style="max-height: 100px;" />
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/logos/logo-brubank.png" class="img-fluid mx-auto" alt="Brubank" style="max-height: 100px;" />
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/logos/logo-modo.png" class="img-fluid mx-auto" alt="Modo" style="max-height: 100px;" />
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/logos/logo-uala.png" class="img-fluid mx-auto" alt="Uala" style="max-height: 100px;" />
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/logos/logo-visa.png" class="img-fluid mx-auto" alt="Visa" style="max-height: 100px;" />
+      </div>
+    </div>
+  </div> <!-- ← cierre que faltaba -->
+</div>
+
+
     </section>
 
 
