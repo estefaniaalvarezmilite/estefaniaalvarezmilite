@@ -584,7 +584,7 @@ section:not(#hero) {
   transition: transform 0.3s ease, border 0.3s ease;
 }
 
-/* Que Hay Dentro Auto Fade */
+/* Que Hay Dentro Manual Carrousel */
 
 #carouselQueHay.carousel.carousel-fade .carousel-item {
   opacity: 0;
@@ -604,14 +604,49 @@ section:not(#hero) {
   z-index: 1;
 }
 
-#carouselQueHay.carousel.carousel-fade .carousel-item {
-  transition: opacity 2s ease-in-out, visibility 2s ease-in-out;
+#carouselQueHay .carousel-control-prev,
+#carouselQueHay .carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  z-index: 10;
 }
 
-#carouselQueHay .carousel-indicators [data-bs-target],
-#carouselQueHay .carousel-indicators .active {
-  transition: all 2s ease-in-out;
+#carouselQueHay .carousel-control-prev {
+  left: -40px;
 }
+
+#carouselQueHay .carousel-control-next {
+  right: -40px;
+}
+
+#carouselQueHay .carousel-control-prev,
+#carouselQueHay .carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  #carouselQueHay .carousel-control-prev {
+    left: -20px;
+  }
+
+  #carouselQueHay .carousel-control-next {
+    right: -20px;
+  }
+
+  #carouselQueHay .carousel-control-prev i,
+  #carouselQueHay .carousel-control-next i {
+    background-color: white;
+    border-radius: 50%;
+    padding: 2px;
+  }
+}
+
 
 
 /* Que Opinan Cards */
