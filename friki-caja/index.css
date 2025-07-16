@@ -697,7 +697,7 @@ section:not(#hero) {
 @media (max-width: 768px) {
   #hero-detalle {
     background-image: none;
-    padding-top: 8rem !important; /* Aumentamos bastante el margen superior */    
+    padding-top: 8rem !important;    
     height: auto;
     padding-bottom: 3rem;
      display: block !important;
@@ -719,6 +719,7 @@ section:not(#hero) {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin-top: 2rem; 
 }
 
 .que-texto {
@@ -733,6 +734,90 @@ section:not(#hero) {
 .que-texto.active {
   opacity: 1;
   color: var(--color-primary);
+}
+
+#que-incluye-frikiplus .custom-carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: var(--color-primary);
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+#que-incluye-frikiplus .carousel-control-prev {
+  left: -40px;
+}
+
+#que-incluye-frikiplus .carousel-control-next {
+  right: -40px;
+}
+
+@media (max-width: 768px) {
+  #que-incluye-frikiplus .carousel-control-prev {
+    left: 10px;
+  }
+
+  #que-incluye-frikiplus .carousel-control-next {
+    right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  #queIncluyeTextos {
+    margin-top: 1.5rem; 
+  }
+
+  #que-incluye-frikiplus h1.title {
+    margin-bottom: 1rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  #que-incluye-frikiplus .custom-carousel-control {
+    font-size: 2rem; /* más chico que 3rem */
+  }
+
+  #que-incluye-frikiplus .carousel-control-prev,
+  #que-incluye-frikiplus .carousel-control-next {
+    top: 55%; /* opcional: ajusta verticalmente */
+    transform: translateY(-50%);
+  }
+}
+@media (max-width: 768px) {
+  #que-incluye-frikiplus .carousel-control-prev {
+    left: 0px !important;
+  }
+
+  #que-incluye-frikiplus .carousel-control-next {
+    right: 0px !important;
+  }
+
+  #que-incluye-frikiplus .custom-carousel-control {
+    font-size: 2rem; /* si querés también achicarlas */
+  }
+}
+@media (max-width: 768px) {
+  #que-incluye-frikiplus .carousel-control-prev {
+    left: -20px !important;
+  }
+
+  #que-incluye-frikiplus .carousel-control-next {
+    right: -20px !important;
+  }
+
+  #que-incluye-frikiplus .custom-carousel-control {
+    font-size: 2rem;
+    z-index: 20;
+  }
+
+  /* Opcional: que las flechas estén visibles y clickeables */
+  #que-incluye-frikiplus .custom-carousel-control i {
+    background-color: white;
+    border-radius: 50%;
+    padding: 2px;
+  }
 }
 
 /* TESTIMONIALS */
