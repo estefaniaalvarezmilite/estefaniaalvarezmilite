@@ -786,7 +786,7 @@ section:not(#hero) {
 /* HERO DETALLE como fondo */
 #hero-detalle {
   min-height: 100vh;
-  background-image: url('./assets/img-hero-detalle-desktop.png');
+  background-image: url('./assets/img-hero-detalle-background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
