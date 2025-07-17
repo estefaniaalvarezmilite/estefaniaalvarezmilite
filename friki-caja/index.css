@@ -47,7 +47,6 @@
 
 /* ----- Hero ----- */
 
-
 #hero {
   height: var(--height-section);
   background-image: url('./assets/img-hero-full.png');
@@ -65,6 +64,12 @@
   }
 }
 
+/* Espacio entre boton e imagen en Hero Mobile */
+@media (max-width: 768px) {
+  #hero .cta-wrapper {
+    margin-bottom: 5rem; 
+  }
+}
 
 #hero h1 {
   font-size: clamp(24px, 3.5vw, 64px);
@@ -268,11 +273,15 @@ section:not(#hero) {
   width: 50%;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   #hero {
-    background-position: top;
-    padding-top: calc(var(--height-header) + 20%);
-    height: auto; 
+    background-image: none;
+    padding-top: 10rem !important;    
+    height: auto;
+    padding-bottom: 3rem;
+     display: block !important;
+    align-items: center;
+    scroll-margin-top: var(--height-header);
   }
 }
 
@@ -510,8 +519,14 @@ section:not(#hero) {
 
 
 /* Friki Swap */
-#frikiswap .card-title {
-  font-size: 1rem;
+
+@media (min-width: 992px) {
+  #frikiswap .card-title,
+  #frikiswap h5.card-title {
+    font-size: 1rem !important;
+    line-height: 1.2 !important;
+    word-break: break-word;
+  }
 }
 
 #frikiswap .card {
@@ -557,8 +572,9 @@ section:not(#hero) {
   font-family: var(--font-primary);
   font-size: clamp(12px, 2vw, 16px);
   text-transform: uppercase;
-  margin-bottom: 0.5rem;
+ margin-bottom: 1.2rem !important;
 }
+
 
 #frikiswap .card {
   background-color: #d75159; 
@@ -574,14 +590,42 @@ section:not(#hero) {
 }
 
 .plan-card:hover {
-  transform: scale(1.03);
+  transform: scale(1);
   border: 5px solid var(--color-secondary);
   box-shadow: none;
   z-index: 2;
 }
 
 .plan-card {
-  transition: transform 0.3s ease, border 0.3s ease;
+ transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+ border 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+body :not(style):not(script) {
+  /* Underline every @ character in text nodes */
+}
+body :not(style):not(script) {
+  text-decoration-skip-ink: none;
+}
+body :not(style):not(script) {
+  /* Use a selector for text nodes containing @ */
+}
+body :not(style):not(script) {
+  /* This will not work for plain text, so use the following: */
+}
+body {
+  /* Underline @ using a unicode-range font feature */
+}
+body {
+  /* Use this for a CSS-only solution: */
+}
+body {
+  /* Underline @ using a span and CSS */
+}
+body .underline-at {
+  text-decoration: underline;
 }
 
 /* Que Hay Dentro Manual Carrousel */
@@ -589,7 +633,7 @@ section:not(#hero) {
 #carouselQueHay.carousel.carousel-fade .carousel-item {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.6s ease-in-out, visibility 0.6s ease-in-out;
+  transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out;
   position: absolute;
   top: 0;
   left: 0;
@@ -686,36 +730,38 @@ section:not(#hero) {
   box-shadow: 0 0 0 2px var(--color-primary);
 }
 
+
+
 @media (max-width: 768px) {
   #contacto .cta-wrapper {
-    position: static;
-    width: 100%;
-    margin: 1rem auto 0 auto;
-  }
-
-  #contacto .cta {
-    position: static;
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-    font-size: 1rem;
-    padding: 0.8rem;
-    transform: none;
-  }
-
-  #contacto .ctac {
-    display: none; /* ocultamos el marco decorativo solo en mobile */
-  }
+   display: inline-block;
+    width: auto;
+  margin-top: 1rem;
+  margin-left: 1rem
+  text-align: left;
 }
 
-
-
-
+  #contacto .cta {
+    margin-left: 1rem;
+    display: inline-block;
+}
 
   #contacto .ctac {
-    height: 56px; /* asegurate que tenga espacio suficiente para el botón */
+   display: block;
+   border: 5px solid var(--color-primary);
+  border-radius: 5px;
+  margin-left: 1rem
+    top: 1;
+    left: 1;
+    width: 85%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    display: block;
+  
+    
   }
-
+}
 
 
 /* Footer */
@@ -798,7 +844,7 @@ section:not(#hero) {
 @media (max-width: 768px) {
   #hero-detalle {
     background-image: none;
-    padding-top: 8rem !important;    
+    padding-top: 5rem !important;    
     height: auto;
     padding-bottom: 3rem;
      display: block !important;
@@ -898,7 +944,7 @@ section:not(#hero) {
   }
 
   #que-incluye-frikiplus .custom-carousel-control {
-    font-size: 2rem; /* si querés también achicarlas */
+    font-size: 2rem; 
   }
 }
 @media (max-width: 768px) {
@@ -915,7 +961,7 @@ section:not(#hero) {
     z-index: 20;
   }
 
-  /* Opcional: que las flechas estén visibles y clickeables */
+  
   #que-incluye-frikiplus .custom-carousel-control i {
     background-color: white;
     border-radius: 50%;
@@ -979,7 +1025,7 @@ section:not(#hero) {
   font-size: inherit;;
   color: var(--color-primary);
   z-index: 10;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 }
 /* Tamaño normal en desktop */
 #opiniones-plus .carousel-control-prev i,
@@ -1033,7 +1079,6 @@ section:not(#hero) {
 }
 
 
-
 /* Transición más suave para el carrusel de detalle de Que Incluye */
 #carouselIncluye.carousel.carousel-fade .carousel-item {
   opacity: 0;
@@ -1074,12 +1119,42 @@ section:not(#hero) {
 }
 
 #metodos-de-pago {
-  margin-top: 100px; /* o el valor que necesites */
+  margin-top: 100px;
 }
 
 @media (max-width: 768px) {
   #metodos-de-pago {
-    margin-top: 60px; /* menos espacio en mobile si querés */
+    margin-top: 60px; 
   }
 }
 
+/* Hover grow effect ONLY for quienes-img and porque-img */
+.quienes-img,
+.porque-img {
+  transition: transform 0.4s cubic-bezier(0.4, 0.2, 0.2, 1);
+  will-change: transform;
+}
+
+.quienes-img:hover,
+.porque-img:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+/* Titulos en Azul */
+
+#preguntas-frecuentes .title {
+  color: var(--color-secondary) !important;
+}
+
+#contacto .title {
+  color: var(--color-secondary) !important;
+}
+
+#metodos-de-pago .title {
+  color: var(--color-secondary) !important;
+}
+
+#universos-new .title {
+  color: var(--color-secondary) !important;
+}
