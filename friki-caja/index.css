@@ -598,7 +598,7 @@ section:not(#hero) {
 
 .plan-card {
  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
- border 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+ border: 0.7s cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 0.7s cubic-bezier(0.22, 1, 0.36, 1);
   will-change: transform;
 }
@@ -734,11 +734,11 @@ body .underline-at {
 
 @media (max-width: 768px) {
   #contacto .cta-wrapper {
-   display: inline-block;
-    width: auto;
+  display: inline-block;
+  width: auto;
   margin-top: 1rem;
   margin-left: 1rem
-  text-align: left;
+  text-align left;
 }
 
   #contacto .cta {
@@ -751,13 +751,13 @@ body .underline-at {
    border: 5px solid var(--color-primary);
   border-radius: 5px;
   margin-left: 1rem
-    top: 1;
-    left: 1;
-    width: 85%;
-    height: 100%;
-    z-index: 0;
-    pointer-events: none;
-    display: block;
+  top 1;
+  left: 1;
+  width: 85%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  display: block;
   
     
   }
