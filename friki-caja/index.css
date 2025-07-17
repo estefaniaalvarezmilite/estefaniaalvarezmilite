@@ -745,6 +745,7 @@ body .underline-at {
   height: 100%;
   z-index: 0;
   pointer-events: none;
+
   display: block;
   
     
@@ -1139,9 +1140,6 @@ body .underline-at {
   color: var(--color-secondary) !important;
 }
 
-#metodos-de-pago .title {
-  color: var(--color-secondary) !important;
-}
 
 #universos-new .title {
   color: var(--color-secondary) !important;
