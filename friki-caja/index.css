@@ -651,43 +651,31 @@ body .underline-at {
 
 #carouselQueHay .carousel-control-prev,
 #carouselQueHay .carousel-control-next {
-  top: 50%;
-  transform: translateY(-50%);
   font-size: 1.3rem;
   color: var(--color-primary);
   z-index: 10;
 }
 
-#carouselQueHay .carousel-control-prev {
-  left: -100px;
+/* Flechas debajo del carrusel de QUE HAY ADENTRO */
+.carousel-controls-below {
+  margin-top: 1.5rem;
 }
 
-#carouselQueHay .carousel-control-next {
-  right: -100px;
-}
-
-#carouselQueHay .carousel-control-prev,
-#carouselQueHay .carousel-control-next {
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.3rem;
+.custom-carousel-control-below {
+  background: none;
+  border: none;
   color: var(--color-primary);
-  z-index: 10;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.custom-carousel-control-below i {
+  font-size: 3rem !important;
 }
 
 @media (max-width: 768px) {
-  #carouselQueHay .carousel-control-prev {
-    left: -33px;
-  }
-
-  #carouselQueHay .carousel-control-next {
-    right: -33px;
-  }
-
-  #carouselQueHay .carousel-control-prev i,
-  #carouselQueHay .carousel-control-next i {
-    border-radius: 50%;
-    padding: 2px;
+  .custom-carousel-control-below i {
+    font-size: 1rem !important; 
   }
 }
 
@@ -752,8 +740,8 @@ body .underline-at {
   border-radius: 5px;
   margin-left: 1rem
   top 1;
-  left: 1;
-  width: 85%;
+  left: -1px;
+  width: 95%;
   height: 100%;
   z-index: 0;
   pointer-events: none;
@@ -841,7 +829,7 @@ body .underline-at {
   background-color: var(--color-secondary); 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #hero-detalle {
     background-image: none;
     padding-top: 5rem !important;    
