@@ -606,25 +606,7 @@ section:not(#hero) {
 }
 
 body :not(style):not(script) {
-  /* Underline every @ character in text nodes */
-}
-body :not(style):not(script) {
   text-decoration-skip-ink: none;
-}
-body :not(style):not(script) {
-  /* Use a selector for text nodes containing @ */
-}
-body :not(style):not(script) {
-  /* This will not work for plain text, so use the following: */
-}
-body {
-  /* Underline @ using a unicode-range font feature */
-}
-body {
-  /* Use this for a CSS-only solution: */
-}
-body {
-  /* Underline @ using a span and CSS */
 }
 body .underline-at {
   text-decoration: underline;
